@@ -1,0 +1,564 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+
+body {
+	//front-family: OSCB;
+	background-attachment: fixed;
+	background-size: 100%;
+	width: 100%;
+	margin-bottom: -1px;
+	margin-top: -1px;
+	margin-left: -0.5px;
+	min-width: 180px;
+}
+.clear:after {
+	box-sizing: border-box;
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.navbar{
+	position: fixed;
+	z-index: 1000;
+}
+
+.navbar, .office_img_in, footer {
+	background: #646266;
+	width: 100%;
+	overflow: auto;
+	max-width: 1440px;
+}
+
+
+
+.navbar-in, .navbar-hide, .service_in,.price_list, .for_bank, .footer_in, .text_head{
+	//border:solid;
+	overflow: auto;
+	max-width: 1440px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.navbar-hide div{
+	font-family: OSCB;
+	color:white;
+	user-select: none;
+	text-align: center;
+	display:block;
+	float:left;
+	width: 20%;
+	height: 55px;
+	margin-top:3px;
+	padding:3px 0;
+	border-top:0.5px solid rgb(247, 191, 7);
+}
+.navbar-hide div:hover{
+	cursor: pointer;
+	background: rgba(222, 173, 11, 0.79);
+}
+
+.block_hide{
+	display:none;
+}
+
+
+.navbar-in div{
+	display:inline-block;
+	//float:left;
+	font-family: "Intro";
+	font-size:1.4em;
+	min-height: 63px;
+	width:16.66%;
+	color: white;
+	padding-top: 15px;
+	text-align: center;
+}
+.logo{
+	background-image: url('../logo/logo.png');
+	min-width:167px;
+	max-width:167px;
+}
+.phone{
+	min-width:200px;
+
+
+}
+.service_us {
+	background: rgb(247, 191, 7);
+	min-width:167px;
+	user-select: none;
+}
+.about_us{
+
+	min-width:167px;
+	user-select: none;
+}
+.about_us:hover, .service_us:hover {
+	background: rgb(247, 216, 15);
+	transition: 0.15s linear;
+	cursor: pointer;
+	color:  #646266;
+}
+
+.logo:hover{
+	cursor: pointer;
+}
+
+
+.office_img{
+	background-image: url('../img/back.png');
+	width: 100%;
+}
+
+.office_img_in{
+	font-family: OSCB;
+	padding:140px 3% 0 3%;
+	height:300px;
+	background-image: url('../img/OFFICE_1.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position: top;
+	font-size: 2em;
+	text-align: center;
+	color:rgb(247, 191, 7);
+
+}
+
+.service{
+	border-top: 0.5px solid #646266;
+	background: linear-gradient(#f9faf2, #c9c999) ;
+	font-family: OSCB;
+	overflow: auto;
+	width: 100%;
+	margin-top: 50px;
+	padding:70px 0;
+	
+}
+
+.service_img{
+	display:inline-block;
+	font-size: 1.5em;
+	width:350px;
+	height:200px;
+	float:left;
+	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+}
+.documents{
+	background-image: url('../img/doc350200.png');
+}
+.repair{
+	background-image: url('../img/remont350200.jpg');
+}
+.konc{
+	background-image: url('../img/konc350200.png');
+}
+.cleening{
+	background-image: url('../img/uborka350200.jpg');
+}
+.techniks{
+	background-image: url('../img/computers350200.jpg');	
+}
+.service_name{
+	display: block;
+	width:330px;
+	height:180px;
+	margin:10px;
+	//color:white;	
+
+	border: 0.5px solid white;
+}
+.name_txt{
+	display: block;
+	text-align: center;
+	margin-left:0.5px;
+	padding: 0 1%;
+	color:white;	
+	background: rgba(222, 173, 11, 0.79);
+
+}
+.detail{
+	display:inline-block;
+	//border:solid;
+	text-align:center;
+	
+	width:60%;
+	padding: 0 5%;
+	font-size: 1.8em;
+}
+
+.small{
+	font-size: 1.4em;	
+}
+.usluga_name{
+	width: 64%;
+	display:inline-block;
+	font-family: OSCB;
+	font-size:1.6em;	
+}
+
+.choice_serv{
+	display:inline-block;
+	width: 20%;
+	max-width: 150px;
+	
+}
+.pos{
+	border-top:0.6px solid rgb(99, 88, 13);
+	display: block;
+	margin:10px 0;
+	font-family: OSCB;
+	font-size:1em;
+}
+
+.pos_spis{
+	margin:40px 0;
+}
+
+.pos_name{
+	display: inline-block;
+
+	padding-top: 5px;
+	width: 32%;
+
+}
+
+.pos_price{
+	display: inline-block;
+	padding-top: 5px;
+	
+	max-width: 280px;
+	width: 32%;
+
+}
+
+.div_amount{
+	display: inline-block;
+	padding-top: 6px;
+	min-width: 150px;
+	width: 15%;
+}
+
+.amount{
+	font-family: OSCB;
+	font-size:1em;
+	height: 30px;
+	text-align: center;
+	width: 100%;
+}
+.rslt{
+	display: inline-block;
+	padding-top: 5px;
+	max-width: 200px;
+	width: 15%;
+	text-align: center;
+}
+.check{
+	width:16px;
+	height:16px;
+}
+
+.order{
+	display: none;
+	width: 30%;
+	min-width: 370px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+#final_rate{
+	display: block;
+	font-family: OSCB;
+	padding: 5px 15px;
+	margin-bottom: 30px;
+	font-size:1.8em;
+	
+
+}
+
+#order{
+	display: block;
+	font-family: OSCB;
+	padding: 5px 15px;
+	margin-bottom: 30px;
+	font-size:2.2em;
+	background:#f5ed07;
+	box-shadow: 0 0 15px rgba(0,0,0,0.8);
+}
+
+#order:hover {
+	box-shadow: 0 0 25px rgba(0,0,0,0.8);
+	cursor: pointer;
+}
+
+#order:active {
+	background: linear-gradient(#dead0b, #fae900) ;
+	box-shadow: 0 0 0 rgba(0,0,0,0.8);
+	color:white;
+	
+}
+
+.back_for_bank{
+	background: linear-gradient(#fffceb, #e3e2dc) ;
+	border-top:0.7px solid #f7bf07;
+	padding-bottom: 50px;
+}
+
+.for_bank{
+	margin-top:60px;
+	font-family: "OSCB";
+	font-size:0.9em;
+	
+}
+
+footer {
+	min-height: 450px;
+	margin-top: 100px;
+	padding:50px 0;
+	background: #646266;
+	width: 100%;
+
+}
+.footer_in{
+	padding-top:20px;
+}
+.map{
+	display:block;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	
+}
+.about{
+	display:block;
+	width: 40%;
+	height: 100%;
+	padding-top: 5%;
+	font-family: OSCB;
+	text-align: center;
+	border-left: 1px solid white;
+	font-size: 1.2em;
+	color:white;
+}
+
+
+
+
+
+.l {
+	display: inline-block;
+	float: left;
+}
+
+.r {	
+	display: inline-block;
+	float: right;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 360px){
+
+	.navbar-hide div{
+		width: 100%;
+		height: 100%;
+
+	}
+	.detail{
+		width:100%;
+		padding: 5px 2%;
+		font-size: 1.2em;
+	}
+	.service_img{
+		font-size: 1.2em;
+		width:100%;
+		box-shadow: 0 0 0;
+	}
+
+	.service_name{
+		width:100%;
+		height:100%;
+		margin:0 auto;
+		border: 0.5px solid white;
+	}
+	.btn{
+		margin: 0 auto;
+		font-size:1.6em;
+		width: 80% !important;
+	}
+	.order{
+		min-width: 0;
+	}
+}
+
+@media screen and (min-width: 360px) and (max-width: 450px){
+
+	.navbar-hide div{
+		width: 100%;
+		height: 100%;
+
+	}
+	.detail{
+		width:100%;
+		padding: 5px 2%;
+		font-size: 1.2em;
+	}
+	.btn{
+		margin: 20px auto;
+		font-size:1.6em;
+		width: 60% !important;
+	}
+
+	.order{
+		min-width: 0;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.hide,.logo,.office_img{
+		display:none !important;
+	}
+	.navbar{
+		position: static;
+
+	}
+	.navbar-in, .navbar-hide, .service_in, .footer_in, .text_head{
+		width: 100%;
+	}
+	.navbar-in div{
+		width:100%;
+
+	}
+	.phone{
+		min-width:100px;
+
+	}
+	.navbar-hide div{
+		font-size: 0.85em;
+		height: 100%;
+
+	}
+
+	.detail{
+		width:100%;
+		padding: 15px 2%;
+		font-size: 1.2em;
+	}
+	.btn{
+		margin: 20px auto;
+		font-size:1.6em;
+		width: 45%;
+	}
+	.map{
+		width: 100%;
+	}
+	.about{
+		width: 100%;
+		border:0;
+		padding: 15px 1%;
+	}
+
+
+	.usluga_name,.pos_name,.pos_price,.div_amount,.rslt{
+		width:100%;
+		max-width: 100%;
+		text-align: center;
+	}
+	.amount{
+		width:70%;
+	}
+	.order{
+		width: 100%;
+	}
+
+	#final_rate{
+		font-size:1.3em;
+	}
+
+	#order{
+		font-size:1.7em;
+	}
+
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 860px){
+	.hide{
+		display:none !important;
+	}
+	.navbar-in, .navbar-hide, .service_in, .footer_in, .text_head{
+		width: 100%;
+
+	}
+	.navbar-in div{
+		width:25%;
+		font-size:1em;	
+	}
+	.phone{
+		min-width:100px;
+	}
+	.navbar-hide div{
+		height: 100%;
+
+	}
+	.office_img_in{
+		padding:170px 3% 0 3%;
+		height:400px;
+		font-size: 2.5em;
+	}
+	.detail{
+		width:50%;
+		padding: 0 2%;
+		font-size: 1.2em;
+	}
+	.btn{
+		margin: 30px auto;
+		font-size:2.2em;
+	}
+	.about{
+
+		width: 50%;
+		font-size: 1.1em;
+
+	}
+	.usluga_name,.pos_name,.pos_price,.div_amount,.rslt{
+		width:100%;
+		max-width: 100%;
+		text-align: center;
+		font-size:1.2em;
+	}
+	.amount{
+		width:50%;
+	}
+
+}
+
+@media screen and (min-width: 860px) and (max-width: 1230px) {
+	.hide{
+		display:none !important;
+	}
+	.navbar-in div{
+		width:25%;
+	}
+	.detail{
+		display:inline-block;
+		width:50%;
+		padding: 0 1%;
+		font-size: 1.4em;
+	}
+	.btn{
+		margin: 30px auto;
+		font-size:2.8em;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.navbar, .office_img_in,footer {
+		max-width: 100%;
+
+	}
+	.navbar-in, .navbar-hide, .footer_in, , .text_head{
+		width: 95%;
+	}
+}
