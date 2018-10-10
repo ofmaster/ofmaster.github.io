@@ -141,6 +141,45 @@ body {
 		float:left;
 	box-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
+
+.epult{
+	display:inline-block;
+	width:350px;
+	float:left;
+}
+
+.barcode{
+	width:148px;
+	height:148px;
+	margin: 0 auto;
+	background-image: url('../img/barcode.png');
+}
+
+.epult span{
+	display:block;
+	text-align: center;
+	margin: 5px 0;
+}
+.epult a{
+	display:block;
+	//border:solid;
+	text-align: center;
+	width: 70%;
+	height:50px;
+	color:grey;
+	padding-top:12px;
+	background-color: rgb(111, 214, 154);
+	margin:10px auto;
+	}
+
+a:link, a:visited{
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+}
+
+
 .documents{
 	background-image: url('../img/doc350200.png');
 }
@@ -176,12 +215,17 @@ body {
 }
 .detail{
 	display:inline-block;
-	//border:solid;
 	text-align:center;
-	
 	width:60%;
 	padding: 0 5%;
 	font-size: 1.8em;
+}
+.detailEpult{
+	display:inline-block;
+	text-align:center;
+	width:60%;
+	padding: 0 5%;
+	font-size: 1.6em;
 }
 .btn{
 	font-family: OSCB;
