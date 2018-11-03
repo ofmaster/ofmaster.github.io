@@ -121,6 +121,26 @@ body {
 	color:rgb(247, 191, 7);
 
 }
+ .sale{
+ 	width: 80%;
+ 	margin: 60px auto;
+ 	font-size: 17px;
+ 	background-color: rgb(229, 188, 23);
+ 	border:solid 2px red;
+ 	//color:white;
+ }
+ 
+ .sale2{
+ 	position: relative;
+ 	left:120px;
+ 	top: 90px;
+ 	background-color: red;
+ 	text-align: center;
+ 	transform: rotate(-40deg);
+ }
+ .sale2 span{
+ 	color: white;
+ }
 
 .service{
 	border-top: 0.5px solid #646266;
@@ -135,18 +155,18 @@ body {
 
 
 .service_img{
-	display:inline-block;
 	font-size: 1.5em;
 	width:350px;
 	height:200px;
-		float:left;
+	float:left;
 	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	overflow: hidden;
 }
 
 .epult{
-	display:inline-block;
 	width:350px;
 	float:left;
+	margin: 0 auto;
 }
 
 .barcode{
@@ -181,6 +201,9 @@ a:hover{
 }
 
 
+.hosting{
+	background-image: url('../img/hosting.jpg');
+}
 .documents{
 	background-image: url('../img/doc350200.png');
 }
@@ -201,8 +224,6 @@ a:hover{
 	width:330px;
 	height:180px;
 	margin:10px;
-	//color:white;	
-
 	border: 0.5px solid white;
 }
 .name_txt{
@@ -297,6 +318,7 @@ footer {
 	display: inline-block;
 	float: right;
 }
+
 
 
 

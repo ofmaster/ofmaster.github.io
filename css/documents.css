@@ -12,6 +12,7 @@ body {
 	margin-top: -1px;
 	margin-left: -0.5px;
 	min-width: 180px;
+
 }
 .clear:after {
 	box-sizing: border-box;
@@ -34,12 +35,23 @@ body {
 
 
 
-.navbar-in, .navbar-hide, .service_in,.price_list, .for_bank, .footer_in, .text_head{
+.navbar-in,  .dop, .navbar-hide, .service_in,.price_list, .for_bank, .footer_in, .text_head{
 	//border:solid;
 	overflow: auto;
 	max-width: 1440px;
 	width: 90%;
 	margin: 0 auto;
+	overflow:hidden;
+}
+
+.dop h3{
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.dop p{
+	font-family: OSCB;
+	font-size: 1.1rem;	
 }
 
 .navbar-hide div{
@@ -135,6 +147,7 @@ body {
 	width: 100%;
 	margin-top: 50px;
 	padding:70px 0;
+
 	
 }
 
@@ -145,7 +158,34 @@ body {
 	height:200px;
 	float:left;
 	box-shadow: 0 0 20px rgba(0,0,0,0.8);
+	overflow:hidden;
 }
+.detail ul{
+	text-align: left;
+	font-size:1.2rem;
+}
+.sale{
+ 	width: 80%;
+ 	margin: 60px auto;
+ 	font-size: 17px;
+ 	background-color: rgb(229, 188, 23);
+ 	border:solid 2px red;
+ }
+ 
+ .sale2{
+ 	position: relative;
+ 	left:120px;
+ 	top: 90px;
+ 	background-color: red;
+ 	text-align: center;
+ 	transform: rotate(-40deg);
+ }
+ .sale2 span{
+ 	color: white;
+ }
+ .uslugidetail{
+ 	font-size: 0.8rem;
+ }
 .documents{
 	background-image: url('../img/doc350200.png');
 }
