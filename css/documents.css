@@ -186,6 +186,9 @@ body {
  .uslugidetail{
  	font-size: 0.8rem;
  }
+ .hosting{
+ 	background-image: url('../img/hosting.jpg');
+ }
 .documents{
 	background-image: url('../img/doc350200.png');
 }
