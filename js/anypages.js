@@ -64,7 +64,7 @@ function showOrder(){
 	let order=0;
 	$('.rslt span').each(function(index,val){
 		order+=Number.parseInt($(val).text()); 
-		$('#final_rate').html('Ваш заказа : <span>'+order+'</span> рублей');
+		$('#final_rate').html('Ваш заказ : <span>'+order+'</span> рублей');
 	});
 	if(order){
 		$('.order').css('display', 'block');
@@ -79,7 +79,7 @@ $('#order').click(function(){
 		amount:final_rate,
 		currency:'RUB',
 		order_number:'',
-		description: 'Сума Вашего заказа'},
+		description: 'Сумма Вашего заказа'},
 		function(order) { showSuccessfulPurchase(order) },
 		function(order) { showFailurefulPurchase(order) })});
 
