@@ -79,7 +79,7 @@ $('#order').click(function(){
 		amount:final_rate,
 		currency:'RUB',
 		order_number:'',
-		description: 'Сумма Вашего заказа'},
+		description: 'Сумма вашего заказа'},
 		function(order) { showSuccessfulPurchase(order) },
 		function(order) { showFailurefulPurchase(order) })});
 
