@@ -1,178 +1,888 @@
 <!DOCTYPE html>
-
-
 <html lang="ru">
+
 <head>
-	<title>Офис-Мастер</title>
-	<meta name="keywords"
-	content="обслуживание офисов, уборка квартир, клининг, уборка помещений, продажа бу техники">
-	<meta name="description" content="Обслуживание квартир и офисов">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name=viewport
-	content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link href="css/index.css" rel="stylesheet">
-	<link href="css/fonts.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/animate.css" />
-	<script  src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script  src="js/functions.js"></script>
-</head>
-<body class='clear' id='start' >
+	<title>Офис Мастер</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
 
-	<div class='navbar'>
-		<div class='navbar-in'>
-			<div class='logo l' id='#start'></div>	
-			<div class='service_us l' id='service'>Услуги</div>	
-			<div class='l hide'></div>	
-			<div class='l hide'></div>	
-			<div class='about_us l' id='#about_us_url'>О нас</div>	
-			<div class='phone l'>8 (495) 98-98-431</div>	
-		</div>
-		<div class='navbar-hide'>
-			<div id='#srv_1'>Документо оборот</div>
-			<div id='#srv_2'>Техническое обслуживание квартир и офисов</div>
-			<div id='#srv_3'>Канцелярские товары</div>
-			<div id='#srv_4'>Уборка помещений</div>
-			<div id='#srv_5'>Купля/продажа офисной техники б/у</div>
-		</div>
-	</div>
-	<div class='office_img'>
-		<div class='office_img_in'>
-			<div class='text_head wow bounceIn'>Наша компания оказывает услуги по комплексному обслуживанию квартир и офисов</div>
-			
-		</div>
-	</div> 
+	<meta property="og:title" content="Офис Мастер">
+	<meta property="og:description" content="Офис Мастер">
+	<meta property="og:image" content="images/graphlogobig.png">
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+	<!-- <meta property="og:image" content="http://www.st.by/local/img/404_bg.jpg"> -->
+	<meta property="og:url" content="http://www.st.by/en/">
+	<meta property="og:type" content="website">
+
+
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic,hebrew,greek-ext,greek"
+		rel="stylesheet" type="text/css">
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<meta name="robots" content="index, follow">
+	<meta name="description" content="Офис-Мастер">
 	
-	<div class='service' id='srv_1'>
-		<div class='service_in'>
-			<div class='service_img hosting l wow flipInX' >
-				<div class='service_name'>
-					<div class='name_txt'>DaaS - виртуальный офис</div>
-					<!--div class='sale2'><span>Акция</span></div-->
-				</div>
-			</div>
-			<div class='detail r wow flipInX'>
-				Компания «Офис-Мастер» предоставляет услугу Desktop as a service (DaaS) - виртуальный офис, аренда виртуального сервера и рабочих мест.
-				<!--p class='sale'>Акция!<br>
-				 До конца января 2019 на услуги DaaS действуют предрождественские скидки<p-->
-			</div>
-		</div>
-	</div>
-	<div class='btn wow jackInTheBox' id='daas.html' >
-		Подробно
-	</div>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext" type="text/css"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,500,500italic,300,300italic&subset=latin,cyrillic-ext,greek-ext,latin-ext,greek"
+		type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:700" type="text/css" rel="stylesheet">
+	<link href="css/index.css" type="text/css" data-template-style="true"
+		rel="stylesheet">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript"
+		src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=en"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+	<script type="text/javascript" src="js/core_ajax.js"></script>
+	<script type="text/javascript" src="js/json2.min.js"></script>
+	<script type="text/javascript" src="js/core_ls.js"></script>
+	<script type="text/javascript" src="js/session.js"></script>
+	<script
+		type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14308180995336', '/local/css/main.css?164519127693271', '/local/css/ajax.css?14308181071425']); </script>
+	<link rel="canonical" href="http://www.st.by/en/">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ajax.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.stellar.min.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.waypoints.min.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.easing.1.3.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.spritely.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="text/javascript">
+		bxSession.Expand(1440, "803a84d44cb321db55caee1e5aee1b90", false, "b23bb64224ba863add3437443f12b8d5");
+	</script>
 
-	<div class='service' id='srv_1'>
-		<div class='service_in'>
-			<div class='service_img documents r wow flipInX' >
-				<div class='service_name'>
-					<div class='name_txt'>Организация документооборота</div>
-				</div>
-			</div>
-			<div class='detail l wow flipInX'>
-				Компания «Офис-Мастер» оказывает услуги по ведению архива и архивного хранения документов, а также  специализируется на переплетных работах, сканировании документов, создании электронных архивов.
-			</div>
-		</div>
-	</div>
-	<div class='btn wow jackInTheBox' id='documents.html' >
-		Подробно
-	</div>
-	<div class='service' id='srv_1'>
-		<div class='service_in'>
-			<div class='epult l wow flipInX' >
-				<div class = 'barcode'></div>
-				<span>скачайте наше приложение e-pult</span>
-				<div class = 'btnAndroid'>
-					<a class="" href="https://play.google.com/store/apps/details?id=com.arcanite.e_pult">Google Play</a>
-				</div>
-				<div class = 'btnApple'>
-					<a class="" href="https://itunes.apple.com/us/app/e-pult/id1370559910?ls=1&amp;mt=8">Appstore</a>
-				</div>
-			</div>
-			<div class='detailEpult r wow flipInX'>
-				Е-пульт и iКонсьерж — это мобильная платформа экспресс-услуг диагностики и реагирования на SOS-события в быту и бизнесе путем установки инновационных интернет-датчиков с онлайн-диспетчеризацией и их управлением на базе бесплатного мобильного приложения E-pult, оперативного оказания квалифицированных услуг (электрика, сантехника, IT-специалиста, клинера) при использовании веб-диспетчерской сопровождения и эксплуатации. 
-			</div>
-		</div>
-	</div>
-	<div class='btn wow jackInTheBox' id='https://e-pult.su' >
-		Подробно
-	</div>
-	<div class='service'  id='srv_2'>
-		<div class='service_in'>
-			<div class='service_img repair r wow fadeInDown' >
-				<div class='service_name'>
-					<div class='name_txt'>Техническое обслуживание квартир и офисов</div>
-				</div>
-			</div>
-			<div class='detail l wow fadeInDown'>
-				Компания «Офис-Мастер» оказывают услуги по ремонту сантехники, электрики, мебели, слесарные и плотницкие работы. А также осуществляем установку бытовой техники, мелкий ремонт общестроительный, укладку плитки и напольных покрытий.
-			</div>
-		</div>
-	</div>
-	<div class='btn  wow jackInTheBox' id='repair.html' >
-		Подробно
-	</div>
-	<div class='service'  id='srv_3'>
-		<div class='service_in'>
-			<div class='service_img konc l wow rubberBand' >
-				<div class='service_name'>
-					<div class='name_txt'>Снабжение канцелярскими товарами</div>
-				</div>
-			</div>
-			<div class='detail r wow rubberBand'>
-				Компания «Офис-Мастер» позволит вам облегчить условия закупок предприятий в сфере обеспечения офиса всем необходимым, начиная от ручек, заканчивая офисным оборудованием.
-			</div>
-		</div>		
-	</div>
-	<div class='btn  wow jackInTheBox' id='konc.html' >
 
-		Подробно
-	</div>
-	<div class='service'  id='srv_4'>
-		<div class='service_in'>
-			<div class='service_img cleening r wow zoomIn' >
-				<div class='service_name'>
-					<div class='name_txt'>Услуги по уборке помещений</div>
+
+
+
+	<script type="text/javascript" src="js/main_page.js"></script>
+	<script type="text/javascript">
+		bxSession.Expand(1440, 'bed05feb4058d2bb0ee1ba07d62bff55', false, '71f5095cd29907bdcb3b2ee6f1ea8a4a');
+	</script>
+
+
+
+
+</head>
+
+<body class="language_en">
+
+	<!-- End Google Tag Manager -->
+	<!-- 	//= templates/header.html -->
+	<div class="wrapper clearfix">
+		<aside class="left_col">
+			<div class="left_col_cont">
+				<header>
+					<style>
+						/*.top_menu_item{
+						width: 25%;
+					}*/
+					</style>
+
+					<!-- <div class="container"> -->
+					<div class="logo_box">
+						<!--<a href="/" class="logo_link" title="На главную">
+					<span class="icon logo"></span>
+					<span class="logo_text">СИСТЕМНЫЕ ТЕХНОЛОГИИ</span>
+				</a>!-->
+						<a class="logo_link" href="/" title="To main"> <img src="images/logo.png"
+								alt="СИСТЕМНЫЕ ТЕХНОЛОГИИ"> </a>
+					</div>
+					<div class="mob_menu"><i class="hamburger"></i></div>
+					<nav class="main_menu">
+						<ul class="main_menu_list">
+							<li class="main_menu_item  ">
+								<a class="main_menu_m_link" href="/"><i class="cross"></i>Главная</a>
+
+							</li>
+							<li class="main_menu_item  ">
+								<a class="main_menu_m_link" href="#"><i class="cross"></i>Услуги</a>
+								<ul class="submenu">
+									<li>
+										<!-- <p class="h5">Solutions</p> -->
+										<ul class="submenu_list">
+											<li class=""><a href="omservice.html">Умный офис Office – Master
+												</a>
+											</li>
+											<li class=""><a href="ofservice.html">Комплексное обслуживание
+													офиса</a></li>
+											<li class=""><a href="design.html">Дизайн офисных пространств</a>
+											</li>
+											<li class=""><a href="repair.html">Ремонт офисных пространств под
+													ключ
+												</a></li>
+											<li class=""><a href="it.html">Разработка и доработка программного
+													обеспечения</a></li>
+
+										</ul>
+									</li>
+
+
+								</ul>
+							</li>
+
+							<li class="main_menu_item  ">
+								<a href="/contacts.html" class="main_menu_m_link"><i
+										class="cross"></i>Контакты</a>
+
+							</li>
+
+						</ul>
+					</nav>
+					<div class="search box">
+						<!-- <form action="SaveWeb2zip-order.php" method="POST">
+							<div class="input">
+								<input type="text" class="text_input" name="q" autocomplete="off">
+								<button type="submit" class="icon icon_search"></button>
+							</div>
+						</form> -->
+					</div>
+					<!-- </div> -->
+
+				</header>
+
+				<div class="box not_a_bottom_box"> <span class="icon_box" href="tel:+7"> <i class="icon icon_phone"></i>
+						<span class="icon_box_title"> <span class="tel h4">+7 XXX
+								XXX–XX–XX</span> <span class="label txt_smlst">Москва / <a
+									href="/contacts.html">Все
+									контакты</a></span> </span> </span> <a href="#common_feedback"
+						class="btn dark js_common_popup_btn">Связаться с нами</a>
+					<div class="popup_holder">
+						<div class="popup popup_small" id="common_feedback">
+							<div id="comp_4ebe63e52f85f5e734cdabedd8e16519">
+								<div class="form_area">
+									<div class="h3">Оставить запрос</div>
+									<form action="SaveWeb2zip-order.php" method="POST" class="replaceFormBitixAjax">
+
+										<div class="form_row ">
+											<input type="text" class="text_input  " placeholder="Имя" data-mask=""
+												name="NAME" value="">
+										</div>
+
+										<div class="form_row ">
+											<input type="email" class="text_input  " placeholder="E-mail" data-mask=""
+												name="EMAIL" value="">
+										</div>
+
+										<div class="form_row ">
+											<input type="text" class="text_input  " placeholder="Телефон" data-mask=""
+												name="PHONE" value="">
+										</div>
+
+										<div class="form_row ">
+											<textarea class="" name="MESSAGE"> </textarea>
+										</div>
+
+
+
+										<!--<div class="g-recaptcha" data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"></div>-->
+										<div id="html_element"></div>
+
+										<!-- <div class="form_row ">
+											<div class="captcha">
+
+												<div class="captcha_img">
+													<div class="g-recaptcha" data-theme="light"
+														data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"
+														data-size="normal" data-badge="bottomright"
+														data-callback="RecaptchafreeSubmitForm"></div>
+												</div>
+												<div class="captcha_input">
+													<input type="hidden" name="captcha_sid"
+														value="0d0ee71775cc23a3a0a106d0d107f8ba">
+													<input type="text" name="captcha_word" style="display:none"
+														value="6LftT" placeholder="Code" class="text_input ">
+												</div>
+											</div>
+										</div> -->
+
+										<div class="form_action">
+											<input type="submit" value="Отправить*" class="btn mdl w-100p">
+										</div>
+										<div class="form_agreement">
+											*Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с <a target="_blank"
+												href="/local/Политика обработки персональных данных.pdf">Политикой обработки персональных данных</a>
+										</div>
+										<input type="hidden" name="SITE" value="[s2] en">
+										<input type="hidden" name="submit" value="1">
+										<input type="hidden" name="FORM_ACTION" value="/en/">
+										<input type="hidden" name="bxajaxidjQuery"
+											value="4ebe63e52f85f5e734cdabedd8e16519">
+										<input type="hidden" name="AJAX_CALLjQuery" value="Y">
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+
+
 				</div>
 			</div>
-			<div class='detail l wow zoomIn'>
-				Компания «Офис-Мастер» осуществляет Генеральную уборку помещений в Москве. Еженедельные и ежедневные услуги по уборке помещений. Проведение уборки в производственных и служебных помещениях.
+		</aside>
+		<div class="right_col">
+
+			<ul class="slide_menu" id="js_slide_menu">
+				<li data-slide="1" class="active"><span>How can we help?</span></li>
+
+				<li data-slide="2"><span>How are we working?</span></li>
+
+				<li data-slide="3"><span>Who are we?</span></li>
+			</ul>
+
+
+
+
+			<div class="slide_main">
+				<div class="slide_area">
+
+					<!--section id="slide1" data-slide="1" class="page_slide slide_first" data-stellar-background-ratio=".5"-->
+					<section id="slide1" data-slide="1" class="page_slide slide_first">
+
+						<div class="slide_content_media">
+							<div class="slide_content_prlx">
+								<div id="sliderContentPrlxClouds"
+									class="slide_content_prlx_stage slider_content_prlx_clouds"></div>
+								<div id="sliderContentPrlxCloudsFloating"
+									class="slide_content_prlx_stage slider_content_prlx_clouds_floating"></div>
+							</div>
+							<!--img class="img" src="/local/img/slide_first_prlx.png" alt=""-->
+							<div class="img"></div>
+						</div>
+
+						<div class="slide_content tbl">
+							<div class="col">
+
+
+								<div class="h1">
+									<h1>Эффективные комплексные решения
+										<br>
+										для вашего офиса.
+									</h1>
+								</div>
+
+								<p class="txt_big">Компания Офис-Мастер занимается всем спектром услуг по обслуживанию и
+
+									<br>
+									жизнеобеспечению офисов и организацией оплаты зарубежных сервисов в условиях
+									<br>
+									банковских санкций.
+								</p>
+								<!-- <a href="#" class="btn mdl">Select a solution</a> -->
+								<div class="facts_box">
+									<div class="fact_item">
+										<div class="fact_title"><span data-number-delay="10" data-number-time="1000"
+												class="js_number_animate">5</span> +</div>
+
+										<div class="fact_descr">лет опыта </div>
+									</div>
+
+									<div class="fact_item">
+										<div class="fact_title"><span data-number-delay="10" data-number-time="1000"
+												class="js_number_animate">33</span></div>
+
+										<div class="fact_descr">постоянных клиентов</div>
+									</div>
+
+									<div class="fact_item">
+										<div class="fact_title"><span data-number-delay="10" data-number-time="1000"
+												class="js_number_animate">30</span> +</div>
+
+										<div class="fact_descr">специалистов</div>
+									</div>
+								</div>
+
+
+								<div class="informer informer_fulloftext imgType">
+									<div class="informer informer_fulloftext">
+										<table>
+											<tbody>
+												<tr>
+													<td style="border-image: initial;"><img
+															src="images/iso_27001_1_165.png"></td>
+													<td style="border-image: initial;"><img
+															src="images/iso_9001_165.png"></td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<style>
+									div.imgType {
+										background-color: transparent;
+										box-shadow: none;
+									}
+
+									div.imgType .informer_fulloftext {
+										background-color: transparent;
+									}
+
+									div.imgType .informer_fulloftext>table {
+										width: 100%;
+									}
+
+									div.imgType .informer_fulloftext>table img {
+										width: auto;
+										height: 165px;
+										display: inline-block;
+									}
+
+									div.imgType .informer_fulloftext>table tr td:last-child {
+										text-align: right;
+									}
+								</style>
+								<a href="#" data-slide="2" class="ctrl slide_ctrl"><i class="icon icon_dn_w"></i></a>
+								<!-- <a href="#" data-slide="2" class="icon  ctrl_down slide_ctrl"></a> -->
+
+							</div>
+						</div>
+					</section>
+
+					<!--section id="slide2" data-slide="2" class="page_slide slide_second" data-stellar-background-ratio=".5"-->
+					<!-- <section id="slide2" data-slide="2" class="page_slide slide_light slide_second">
+					
+
+						<div class="slide_content tbl">
+							<div class="col">
+								<div class="h1">Client oriented development<br> for your goals:</div>
+								<div class="carousel clearfix" id="products_carousel">
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">e-Banking
+												channels</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Modern services for bank clients through
+													internet</span>
+												<a href="/en/product/ebanking-channels/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/chart.png" alt="e-Banking channels">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">CRM</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Products for control of clients, sales and marketing
+													companies</span>
+												<a href="/en/product/crm/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/call.png" alt="CRM">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Front to
+												back</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Products for full automation of accounting of
+													transactions with securities</span>
+												<a href="/en/product/front-to-back/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/coin.png" alt="Front to back">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">BI</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Complex solutions for reporting preparation and risk
+													management</span>
+												<a href="/en/product/bi/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/bi.png" alt="BI">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title"
+												style="max-height: 70px;">Factoring</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Type of funding for the supplying enterprise when the
+													products are sold on deferred payment terms.</span>
+												<a href="/en/product/factoring/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/76%20%C3%90%C2%BD%C3%90%C2%B0%2076.png"
+													alt="Factoring">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Core
+												banking</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Full automation of retail and corporate banking
+													business</span>
+												<a href="/en/product/core-banking/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/abs.png" alt="Core banking">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Risk
+												Management</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Complex of modern services for automation of risks
+													management </span>
+												<a href="/en/product/risk-management/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/risk.png" alt="Risk Management">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Insurance &
+												Leasing automation</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Contemporary products for management of leasing or
+													insurance transactions</span>
+												<a href="/en/product/insurance-leasing-automation/"
+													class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/enshurns.png" alt="Insurance & Leasing automation">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Accounting &
+												reporting</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Automation of book accounting of company and
+													entrepreneur</span>
+												<a href="/en/product/accounting-reporting/" class="btn dark">Learn
+													more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/calc.png" alt="Accounting & reporting">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Retail
+												trade</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Solutions for the management of installment and
+													electronic payments</span>
+												<a href="/en/product/retail-trade/" class="btn dark">Learn more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/market.png" alt="Retail trade">
+											</span>
+										</span>
+									</div>
+									<div class="carousel_item">
+										<span class="carousel_item_link">
+											<span class="h4 carousel_item_title" style="max-height: 70px;">Industrial
+												automation</span>
+											<span class="carousel_item_descr">
+												<span class="txt">Products for automation of industrial
+													enterprises</span>
+												<a href="/en/product/industrial-automation/" class="btn dark">Learn
+													more</a>
+											</span>
+											<span class="carousel_item_icon icon_circle">
+												<img src="images/industry.png" alt="Industrial automation">
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+
+						<div class="client_crsl">
+							<div class="client_crsl_title">clients</div>
+							<div class="client_crsl_content" id="clients_crsl">
+								<div class="client_crsl_item"><a href="https://www.priorbank.by/" target="_blank"><img
+											src="images/PNG_eng%20%C3%90%C2%BF%C3%91_%C3%90%C2%B8%C3%90%C2%BE%C3%91_%20%C3%90%C2%BD%C3%90%C2%BE%C3%90%C2%B2%C3%91_%C3%90%C2%B9%20%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://www.alfabank.by/" target="_blank"><img
+											src="images/%C3%90%C2%B0%C3%90%C2%BB%C3%91_%C3%91_%C3%90%C2%B0-%C3%90%C2%B1%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA-%C3%90%C2%B8%C3%90%C2%BD%C3%90%C2%B3%C3%90%C2%BB%C3%90%C2%B8%C3%91_-%C3%90%C2%BD%C3%90%C2%BE%C3%90%C2%B2%C3%91_%C3%90%C2%B9%20%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://www.xalqbank.az/ru/" target="_blank"><img
+											src="images/%C3%91_%C3%90%C2%B0%C3%90%C2%BB%C3%90%C2%B3%20%C3%90%C2%B1%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA%20%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="http://www.bps-sberbank.by/online/ru.personal"
+										target="_blank"><img
+											src="images/%C3%90%C2%B1%C3%90%C2%BF%C3%91_-%C3%91_%C3%90%C2%B1%C3%90%C2%B5%C3%91_%C3%90%C2%B1%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA-%C3%90%C2%B8%C3%90%C2%BD%C3%90%C2%B3%C3%90%C2%BB%C3%90%C2%B8%C3%91_-%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://www.tengebank.uz/uz" target="_blank"><img
+											src="images/%C3%90%C2%A2%C3%90%C2%B5%C3%90%C2%BD%C3%90%C2%B3%C3%90%C2%B5%20%C3%90%C2%B1%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA%20%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://www.fxproru.org/" target="_blank"><img
+											src="images/FXPRO%20%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%91_%C3%90%C2%B9.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://life.com.by/" target="_blank"><img
+											src="images/%C3%90%C2%BB%C3%90%C2%B0%C3%90%C2%B9%C3%91_%20%C3%90%C2%BB%C3%90%C2%BE%C3%90%C2%B3%C3%90%C2%BE.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://www.belveb.by/" target="_blank"><img
+											src="images/%C3%90_%C3%90%C2%B5%C3%90%C2%BB%C3%90_%C3%91_%C3%90%C2%B1.png"
+											alt=""></a>
+								</div>
+								<div class="client_crsl_item"><a href="https://altbank.ua/" target="_blank"><img
+											src="images/%C3%90%C2%B0%C3%90%C2%BB%C3%91_%C3%91_%20%C3%90%C2%B1%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%BA%20%C3%90%C2%B1.%20%281%29.png"
+											alt=""></a>
+								</div>
+							</div>
+						</div>
+						<a href="#" data-slide="3" class="ctrl slide_ctrl"><i class="icon icon_dn_w"></i></a>
+					</section> -->
+
+					<!--section id="slide3" data-slide="3" class="page_slide slide_third" data-stellar-background-ratio=".5"-->
+					<section id="slide3" data-slide="3" class="page_slide slide_light slide_smart">
+						<!--div class="slide_third scrollr_parallax_bg"></div-->
+						<div class="slide_content tbl">
+							<div class="col">
+
+								<div class="h1"> Умный офис `Office – Master`</div>
+								<p class="txt_big">– ЭТО КОМПЛЕКСНОЕ РЕШЕНИЕ ДЛЯ АВТОМАТИЗИРОВАННОГО УПРАВЛЕНИЯ ОФИСНЫМ
+									ПРОСТРАНСТВОМ.</p>
+								<p class="txt_big">Наша компания Офис Мастер ставит своей целью постоянное развитие и
+									совершенствование систем «Умный офис», опираясь на результаты научно-технических
+									разработок, и предложение для потребителя новых инновационных решений. Уже сегодня
+									наши системы позволяют модифицировать сценарии, анализировать алгоритмы и полностью
+									контролировать весь процесс.
+									.</p>
+
+
+								<a href="omservice/omservice.html" class="btn mdl">Подробнее</a>
+							</div>
+						</div>
+					</section>
+
+					<!--section id="slide3" data-slide="3" class="page_slide slide_third" data-stellar-background-ratio=".5"-->
+					<section id="slide3" data-slide="3" class="page_slide slide_light slide_dev">
+						<!--div class="slide_third scrollr_parallax_bg"></div-->
+						<div class="slide_content tbl">
+							<div class="col">
+
+								<div class="h1">Разработка и доработка программного обеспечения</div>
+								<p class="txt_big">Наша компания предлагает полный цикл разработки программного
+									обеспечения на заказ: от бизнес-анализа и дизайна до тестирования и поддержки. У нас
+									в компании работает 20+ программистов, более половины из которых senior
+									разработчики. За 5 с лишним лет мы реализовали более 70 проектов для клиентов по
+									всей России
+									.</p>
+
+								<div class="img_list"> <span class="img_list_item"><img src="images/java.png"
+											alt="java"></span>  <span class="img_list_item"><img src="images/oracle.png"
+											alt="oracle"></span> <span class="img_list_item"><img
+											src="images/react%20%C3%90%C2%B1%C3%90%C2%BE%C3%90%C2%BB%C3%91_%C3%91_%C3%90%C2%B0%C3%91_.png"
+											alt="React" width="250" height="68"></span><span class="img_list_item"><img
+											src="images/Swift_%C3%90%C2%BE%C3%90%C2%B1%C3%91_.png" alt="Swift "
+											width="150" height="40"></span> <span class="img_list_item"><img
+											src="images/spring%20boot%20%C3%90%C2%B1%C3%90%C2%B5%C3%90%C2%BB%C3%90%C2%B0%C3%91_.png"
+											alt="Spring" width="200" height="66"> </span><span
+										class="img_list_item"><img
+											src="images/mysql%20%C3%90%C2%BE%C3%90%C2%B1%C3%91_.png"
+											title="mysql большая.png" border="0" alt="mysql большая.png" width="170"
+											height="47"></span> </div>
+
+								<a href="/it/it.html" class="btn mdl">Подробнее</a>
+							</div>
+						</div>
+					</section>
+
+					<!--section id="slide3" data-slide="3" class="page_slide slide_third" data-stellar-background-ratio=".5"-->
+					<section id="slide3" data-slide="3" class="page_slide slide_light slide_cleen">
+						<!--div class="slide_third scrollr_parallax_bg"></div-->
+						<div class="slide_content tbl">
+							<div class="col">
+
+								<div class="h1">Комплексное обслуживание офиса
+								</div>
+								<p class="txt_big">- УБОРКА ПОМЕЩЕНИЙ</p>
+								<p class="txt_big">- СНАБЖЕНИЕ ОФИСОВ И ДРУГИХ КОММЕРЧЕСКИХ ОБЪЕКТОВ</p>
+
+
+								<a href="/ofservice/ofservice.html" class="btn mdl">Подробнее</a>
+							</div>
+						</div>
+					</section>
+
+					<section id="slide3" data-slide="3" class="page_slide slide_light  slide_design">
+						<!--div class="slide_third scrollr_parallax_bg"></div-->
+						<div class="slide_content tbl">
+							<div class="col">
+
+								<div class="h1">Дизайн и ремонт офисных пространств </div>
+								<p class="txt_big">- РАЗРАБОТКА ДИЗАЙН-ПРОЕКТА ДЛЯ ОФИСНЫХ И ДРУГИХ КОММЕРЧЕСКИХ </p>
+
+
+								<a href="/design/design.html" class="btn mdl">Подрбнее</a>
+							</div>
+						</div>
+					</section>
+					<section id="slide3" data-slide="3" class="page_slide slide_light slide_finance">
+						<!--div class="slide_third scrollr_parallax_bg"></div-->
+						<div class="slide_content tbl">
+							<div class="col">
+
+								<div class="h1">Организация оплаты зарубежных сервисов в условиях банковских санкций
+								</div>
+								<p class="txt_big"></p>
+
+
+								<a href="#" class="btn mdl">Подробнее</a>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div><!-- slide_main EOF -->
+
+
+
+			<div class="footer_nav">
+
+
+				<!-- <div class="footer_nav_col">
+
+					<div class="foo_col">
+						<nav class="foo_nav">
+							<a href="/en/product/ebanking-channels/" class="h5">Products</a>
+							<ul>
+								<li><a href="/en/product/ebanking-channels/">e-Banking channels</a></li>
+								<li><a href="/en/product/crm/">CRM</a></li>
+								<li><a href="/en/product/front-to-back/">Front to back</a></li>
+								<li><a href="/en/product/bi/">BI</a></li>
+								<li><a href="/en/product/factoring/">Factoring</a></li>
+								<li><a href="/en/product/core-banking/">Core banking</a></li>
+								<li><a href="/en/product/risk-management/">Risk Management</a></li>
+								<li><a href="/en/product/insurance-leasing-automation/">Insurance & Leasing
+										automation</a></li>
+								<li><a href="/en/product/accounting-reporting/">Accounting & reporting</a></li>
+								<li><a href="/en/product/retail-trade/">Retail trade</a></li>
+								<li><a href="/en/product/industrial-automation/">Industrial automation</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="foo_col">
+						<nav class="foo_nav">
+							<a href="/en/sphere/banks/" class="h5">Solutions by industry</a>
+							<ul>
+
+								<li><a href="/en/sphere/banks/">Banks</a></li>
+								<li><a href="/en/sphere/non-bank-credit-and-financial-organizations/">Non-bank credit
+										and financial organizations</a></li>
+								<li><a href="/en/sphere/insurance-leasing/">Insurance & Leasing</a></li>
+								<li><a href="/en/sphere/enterprises/">Enterprises</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+				<div class="footer_nav_col">
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+
+							<a href="/en/about/company/" class="h5">Сompany</a>
+							<ul>
+								<li><a href="/en/about/company/">About us</a></li>
+								<li><a href="/en/about/history/">History</a></li>
+								<li><a href="/en/about/advantages/">Advantages</a></li>
+								<li><a href="/en/about/awards/">Certificates and awards</a></li>
+							</ul>
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+
+							<a href="/en/smartcity/dziakuj/" class="h5">SmartCity</a>
+							<ul>
+								<li><a href="/en/smartcity/dziakuj/">Dziakuj</a></li>
+								<li><a href="/en/smartcity/drive-and-pay/">DRIVE&PAY </a></li>
+								<li><a href="/en/smartcity/tix/">TIX</a></li>
+							</ul>
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+
+							<a href="/en/fintech-services/creating-payment-bots/" class="h5">Fintech</a>
+							<ul>
+								<li><a href="/en/fintech-services/creating-payment-bots/">Сreating payment bots</a></li>
+							</ul>
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+							<a href="/en/partners/" class="h5">Partners</a>
+
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+
+							<a href="/en/service/development-of-custom-software/" class="h5">Services</a>
+							<ul>
+								<li><a href="/en/service/development-of-custom-software/">Development of custom
+										software</a></li>
+								<li><a href="/en/service/it-infrastructure/">IT infrastructure</a></li>
+							</ul>
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+							<a href="/en/media/news/" class="h5">News</a>
+
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+
+							<a href="/en/career/work/" class="h5">Career</a>
+							<ul>
+								<li><a href="/en/career/work/">Our offer</a></li>
+								<li><a href="/en/career/vacancy/">Vacancies</a></li>
+								<li><a href="/en/career/training/">Career development</a></li>
+								<li><a href="/en/career/students/">Junior-specialists</a></li>
+							</ul>
+						</nav>
+
+
+					</div>
+
+
+
+					<div class="foo_col">
+
+
+						<nav class="foo_nav">
+							<a href="/en/contacts/" class="h5">Contact</a>
+
+						</nav>
+
+
+					</div>
+				</div>
+
+			</div> -->
 			</div>
 		</div>
-	</div>
-	<div class='btn  wow jackInTheBox' id='cleening.html'>
-		Подробно
-	</div>
-	<div class='service'  id='srv_5'>
-		<div class='service_in'>	
-			<div class='service_img techniks l wow fadeInLeft' >
-				<div class='service_name'>
-					<div class='name_txt'>Купля-продажа офисной техники б/у</div>
+		<footer>
+
+			<div class="phone box"> <span class="icon_box" href="tel:+375293774865"> <i class="icon icon_phone"></i>
+					<span class="icon_box_title"> <span class="tel h4">+375 17 269–04–00</span> <span
+							class="label txt_smlst">Minsk / <a href="/en/contacts/">Все контакты</a></span> </span>
+				</span>
+				<a href="#common_feedback" class="btn dark js_common_popup_btn">Connect with us</a>
+			</div>
+			<div class="address box">
+				<span class="icon_box">
+					<i class="icon icon_map"></i>
+					<span class="icon_box_title">
+						<span class="h4">Москва</span> <span class="label txt_smlst">220141,
+							Москва,<br> Россия <a
+								href="mailto:contact.offmaster@gmail.com">contact.offmaster@gmail.com</a></span> </span>
+				</span>
+			</div>
+			<!-- <div class="foo_btns">
+			<a href="https://www.facebook.com/SystemTechnologies?fref=ts" class="foo_btn" target="_blank"><i
+					class="icon icon_fb"></i></a> <a target="_blank"
+				href="https://www.linkedin.com/company/system-technologies_2?trk=ppro_cprof" class="foo_btn"><i
+					class="icon icon_in"></i></a>
+		</div> -->
+			<div class="copy">
+				<div style="display: inline-block">© 2018-2022 ООО Офис Мастер
+					<!--<a class="site_map_link"
+					href="/en/sitemap/">Sitemap</a>-->
+				</div>
+				<div class="footer_doc">
+					<div>
+						<a href="/local/Политика обработки персональных данных.pdf" target="_blank">Политика
+							конфиденциальности</a>
+					</div>
+					<!-- <div>
+					<a href="/local/Политика использования файлов cookie.pdf" target="_blank">This website uses cookies.
+						Learn more about the Cookie Policy</a>
+				</div> -->
 				</div>
 			</div>
-			<div class='detail r wow fadeInRight'>
-				Компания «Офис-Мастер» выкупит или продаст вам б/у оргтехнику в отличном качестве с гарантией работы ее долгие годы. 
-			</div>
-		</div>
-	</div>
-	<div class='btn  wow jackInTheBox' id='techniks.html' >
+		</footer>
+		<!--asdfasdfas -->
 
-		Подробно
-	</div>
 
-	<footer class='footer'>
-		<div class='footer_in'>
-			<div class='map l'>
-				<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f7ff07a2e1f6ed8cb3105df44b304eea04ce8cc6c9bcfd7621559e52ff5489e&amp;width=100%&amp;height=320&amp;lang=ru_RU&amp;scroll=true"></script>
-			</div>
-			<div class='about r' id='about_us_url'>
-				Адрес: 125130б, г.Москва, ул. Зои и Александра Космодемьянских, д.26/21, стр.1, этаж 5, комната 16.<br/>
-				e-mail: officemaster.msk@gmail.com<br/>
-				телефон: 8 (495) 98-98-431<br/>
-				ОГРН: 1187746030042<br/>
-				ИНН: 7743240206<br/>
-			</div>
-		</div>
-	</footer>
 </body>
+
+</html>

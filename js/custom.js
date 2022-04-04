@@ -1,0 +1,1 @@
+$("document").ready((function(){checkForAjaxForms(),$("body").on("onAjaxReload",(function(o,c){fileInputActions(c),checkForAjaxForms()})),$(".js_common_popup_btn").on("click",(function(){Recaptchafree.reset()}))}));

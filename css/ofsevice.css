@@ -1518,11 +1518,6 @@ header {
   color: #fff;
 }
 
-.slide_content {
-  background-color: rgba(22, 21, 17, 0.42);
- 
-}
-
 .page_slide {
   position: relative;
   height: 750px;
@@ -1858,44 +1853,12 @@ header {
   background-image: url(../images/slide_third.jpg);
 }
 
-.slide_design {
-  background-image: url(../images/office_bkg.jpg);
-}
-
-.slide_finance {
-  background-image: url(../images/finance_bkg.jpg);
-}
-
-.slide_cleen {
-  background-image: url(../images/cleen_bkg.jpg);
-}
-
-.slide_dev {
-  background-image: url(../images/dev_bkg.jpg);
-}
-
-.slide_smart {
-  background-image: url(../images/smart_bkg.jpg);
-}
-
-.slide_third
-  .slide_content
-  .slide_design
-  .slide_finance
-  .slide_cleen
-  .slide_dev
-  .slide_smart {
+.slide_third .slide_content {
   width: 70%;
   color: #fff;
 }
 
-.slide_third
-  .h1
-  .slide_design
-  .slide_finance
-  .slide_cleen
-  .slide_dev
-  .slide_smart {
+.slide_third .h1 {
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -2270,7 +2233,7 @@ header {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 33.33%;
+
   margin-right: -4px;
   font-size: 13px;
   padding: 0 20px 55px;
@@ -2370,7 +2333,15 @@ header {
 
 .container .client_box_item {
   display: inline-block;
-  width: 50%;
+  width: 100%;
+}
+
+.client_box_item li {
+  color: #848484;
+}
+
+span.h3 {
+  color: #3e5b99;
 }
 
 .next_box {
@@ -3410,7 +3381,6 @@ footer .phone {
 /* client box for 3 items
 ****************************************************/
 .client_box_3 .client_box_item {
-  width: 33.33%;
   margin-right: -4px;
   min-width: 0 !important;
 }
@@ -4007,13 +3977,7 @@ h3.search_title,
     width: 970px;
   }
 
-  .slide_third
-    .slide_content
-    .slide_design
-    .slide_finance
-    .slide_cleen
-    .slide_dev
-    .slide_smart {
+  .slide_third .slide_content {
     width: 80%;
   }
 }
@@ -4040,8 +4004,6 @@ h3.search_title,
 
   .page_slide {
     height: auto !important;
-    background-color: grey;
-    z-index: 10000;
   }
 
   .slide_menu {
@@ -4068,13 +4030,7 @@ h3.search_title,
     right: -51px;
   }
 
-  .slide_third
-    .slide_content
-    .slide_design
-    .slide_finance
-    .slide_cleen
-    .slide_dev
-    .slide_smart {
+  .slide_third .slide_content {
     width: 100%;
   }
 
@@ -4394,7 +4350,6 @@ h3.search_title,
 @media only screen and (max-width: 1164px) {
   .client_box_item:nth-child(5) .h3 > span {
     font-size: 14px;
-    width: 120px;
   }
 }
 
@@ -4615,7 +4570,7 @@ h3.search_title,
 
   .client_box_item .client_box_txt ul li:before {
     display: inline-block;
-    width: 18px;
+
     position: static;
   }
 

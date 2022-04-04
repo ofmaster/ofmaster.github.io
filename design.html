@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Офис Мастер</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta property="og:title" content="Офис Мастер">
+	<meta property="og:description" content="Офис Мастер">
+	<meta property="og:image" content="images/graphlogobig.png">
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+	<!-- <meta property="og:image" content="http://www.st.by/local/img/404_bg.jpg"> -->
+	<meta property="og:url" content="http://www.st.by/en/">
+	<meta property="og:type" content="website">
+
+
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic,hebrew,greek-ext,greek"
+		rel="stylesheet" type="text/css">
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="E-ticket">
+	<meta name="description" content="Service for payment for trips in public transport via passenger’s smartphone.">
+	
+
+	<link href="css/design.css" type="text/css" data-template-style="true"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext" type="text/css"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,500,500italic,300,300italic&subset=latin,cyrillic-ext,greek-ext,latin-ext,greek"
+		type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:700" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript"
+		src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=en"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+	<script type="text/javascript" src="js/core_ajax.js"></script>
+	<script type="text/javascript" src="js/json2.min.js"></script>
+	<script type="text/javascript" src="js/core_ls.js"></script>
+	<script type="text/javascript" src="js/session.js"></script>
+	<script
+		type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14308180995336', '/local/css/main.css?164519127693271', '/local/css/ajax.css?14308181071425']); </script>
+	<link rel="canonical" href="http://www.st.by/en/smartcity/tix/">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ajax.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.stellar.min.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.waypoints.min.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.easing.1.3.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.spritely.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="text/javascript">
+		bxSession.Expand(1440, "803a84d44cb321db55caee1e5aee1b90", false, "b23bb64224ba863add3437443f12b8d5");
+	</script>
+
+
+	<script type="text/javascript">
+		bxSession.Expand(1440, 'bed05feb4058d2bb0ee1ba07d62bff55', false, '71f5095cd29907bdcb3b2ee6f1ea8a4a');
+	</script>
+	<script
+		type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "4db852ee09845af5b6f7856dd1967c73"]); _ba.push(["host", "www.st.by"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
+
+
+
+</head>
+
+<body class="language_en">
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJ648D" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PJ648D');</script>
+	<!-- End Google Tag Manager -->
+	<!-- 	//= templates/header.html -->
+	<div class="wrapper clearfix">
+		<aside class="left_col">
+			<div class="left_col_cont">
+				<header>
+					<style>
+						/*.top_menu_item{
+						width: 25%;
+					}*/
+					</style>
+
+					<!-- <div class="container"> -->
+					<div class="logo_box">
+						<!--<a href="/" class="logo_link" title="На главную">
+					<span class="icon logo"></span>
+					<span class="logo_text">СИСТЕМНЫЕ ТЕХНОЛОГИИ</span>
+				</a>!-->
+						<a class="logo_link" href="/" title="To main"> <img src="images/logo.png"
+								alt="СИСТЕМНЫЕ ТЕХНОЛОГИИ"> </a>
+					</div>
+					<div class="mob_menu"><i class="hamburger"></i></div>
+					<nav class="main_menu">
+						<ul class="main_menu_list">
+							<li class="main_menu_item  ">
+								<a class="main_menu_m_link" href="/"><i class="cross"></i>Главная</a>
+
+							</li>
+							<li class="main_menu_item  ">
+								<a class="main_menu_m_link" href="#"><i class="cross"></i>Услуги</a>
+								<ul class="submenu">
+									<li>
+										<!-- <p class="h5">Solutions</p> -->
+										<ul class="submenu_list">
+											<li class=""><a href="/omservice.html">Умный офис Office – Master
+												</a>
+											</li>
+											<li class=""><a href="/ofservice.html">Комплексное обслуживание
+													офиса</a></li>
+											<li class=""><a href="/design.html">Дизайн офисных пространств</a>
+											</li>
+											<li class=""><a href="/repair.html">Ремонт офисных пространств под
+													ключ
+												</a></li>
+											<li class=""><a href="/it.html">Разработка и доработка программного
+													обеспечения</a></li>
+
+										</ul>
+									</li>
+
+
+								</ul>
+							</li>
+
+							<li class="main_menu_item  ">
+								<a href="/contacts.html/" class="main_menu_m_link"><i
+										class="cross"></i>Контакты</a>
+
+							</li>
+
+						</ul>
+					</nav>
+					<div class="search box">
+						<!-- <form action="SaveWeb2zip-order.php" method="POST">
+							<div class="input">
+								<input type="text" class="text_input" name="q" autocomplete="off">
+								<button type="submit" class="icon icon_search"></button>
+							</div>
+						</form> -->
+					</div>
+					<!-- </div> -->
+
+				</header>
+				<div class="box not_a_bottom_box"> <span class="icon_box" href="tel:+7"> <i class="icon icon_phone"></i>
+						<span class="icon_box_title"> <span class="tel h4">+7 XXX
+								XXX–XX–XX</span> <span class="label txt_smlst">Москва / <a
+									href="/contacts.html/">Все
+									контакты</a></span> </span> </span> <a href="#common_feedback"
+						class="btn dark js_common_popup_btn">Связаться с нами</a>
+					<div class="popup_holder">
+						<div class="popup popup_small" id="common_feedback">
+							<div id="comp_4ebe63e52f85f5e734cdabedd8e16519">
+								<div class="form_area">
+									<div class="h3">Оставить запрос</div>
+									<form action="SaveWeb2zip-order.php" method="POST" class="replaceFormBitixAjax">
+
+										<div class="form_row ">
+											<input type="text" class="text_input  " placeholder="Имя" data-mask=""
+												name="NAME" value="">
+										</div>
+
+										<div class="form_row ">
+											<input type="email" class="text_input  " placeholder="E-mail" data-mask=""
+												name="EMAIL" value="">
+										</div>
+
+										<div class="form_row ">
+											<input type="text" class="text_input  " placeholder="Телефон" data-mask=""
+												name="PHONE" value="">
+										</div>
+
+										<div class="form_row ">
+											<textarea class="" name="MESSAGE"> </textarea>
+										</div>
+
+
+
+										<!--<div class="g-recaptcha" data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"></div>-->
+										<div id="html_element"></div>
+
+										<!-- <div class="form_row ">
+											<div class="captcha">
+
+												<div class="captcha_img">
+													<div class="g-recaptcha" data-theme="light"
+														data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"
+														data-size="normal" data-badge="bottomright"
+														data-callback="RecaptchafreeSubmitForm"></div>
+												</div>
+												<div class="captcha_input">
+													<input type="hidden" name="captcha_sid"
+														value="0d0ee71775cc23a3a0a106d0d107f8ba">
+													<input type="text" name="captcha_word" style="display:none"
+														value="6LftT" placeholder="Code" class="text_input ">
+												</div>
+											</div>
+										</div> -->
+
+										<div class="form_action">
+											<input type="submit" value="Отправить*" class="btn mdl w-100p">
+										</div>
+										<div class="form_agreement">
+											*Нажимая на кнопку, вы даете согласие на обработку персональных данных в соответствии с <a target="_blank"
+												href="/local/Политика обработки персональных данных.pdf">Политикой обработки персональных данных</a>
+										</div>
+										<input type="hidden" name="SITE" value="[s2] en">
+										<input type="hidden" name="submit" value="1">
+										<input type="hidden" name="FORM_ACTION" value="/en/">
+										<input type="hidden" name="bxajaxidjQuery"
+											value="4ebe63e52f85f5e734cdabedd8e16519">
+										<input type="hidden" name="AJAX_CALLjQuery" value="Y">
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+		</aside>
+		<div class="right_col">
+			<div class="header" style="background-image: url('images/12.jpg');">
+
+				<h1>
+					ДИЗАЙН ОФИСНЫХ ПРОСТРАНСТВОМ/h1>
+					<h2 class="sub_title">
+					</h2>
+			</div>
+			<div class="content clearfix">
+				<div class="content_col">
+					<div class="container products_container">
+						<p class="MsoNormal"> В основе организации офисного пространства лежат три главных принципа:
+							создания комфортной для работы атмосферы, гармоничного сочетания ландшафтных и архитектурных
+							форм и адаптации дизайна интерьера к конкретной группе сотрудников или отдельного человека.
+							Окружающая обстановка должна стимулировать сотрудников, настраивать на продуктивную работу и
+							активность, снижать стресс и повышать сплоченность коллектива. Согласно этим знаниям,
+							сегодня к проектированию офисного пространства подходят как с практической, так и с
+							психологической точки зрения.
+
+						</p>
+						<h2>Разработка эргономичного пространства
+						</h2>
+						<p class="MsoNormal">
+							Главная задача первого этапа проектирования – укомплектовать рабочие места офиса для
+							повышения трудовой активности и творческого процесса. С точки зрения дизайна планировка
+							офиса невозможна без зонирования рабочих мест. Это позволяет создать индивидуальное рабочее
+							место для сотрудника и сэкономить пространство. Правильная планировка офиса невозможна без
+							использования практичных и стильных офисных перегородок.
+						</p>
+
+						<div data-w-id="a617a915-d329-b911-3804-efb9af08b8c4" data-animation-type="lottie"
+							data-src="https://assets.website-files.com/619502990d84193a0d9d6e54/61f2522575cb9f8e61da0cf7_estimote-illustration-new.json"
+							data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0"
+							data-renderer="svg" data-default-duration="15.015014403440953" data-duration="0"
+							class="lottie-animation"></div>
+						<div>
+
+
+							<br>
+
+							<div>
+
+
+								<div>
+									<ol style="text-align: justify;"> </ol>
+
+
+
+									<h2 class="h2">УСЛУГИ ПО РАЗРАБОТКЕ ДИЗАЙН ПРОЕКТА </h2>
+
+
+									<ul> <span class="icon_circle"> <img src="images/21521.png"> </span>
+										<ul>
+											<li>Создание дизайн-проекта — начальный этап преображения офиса или
+												помещения. Разрабатывая проект, дизайнеры нашей компании учитывают
+												множество технических факторов, ориентируется на новые тенденции и
+												лучший мировой опыт, прислушиваются к пожеланиям заказчика и воплощают в
+												проекте идею создания эргономичного и комфортного рабочего пространства.
+											</li>
+
+											<li>Чтобы реализовать этот комплекс задач, от дизайнера требуется не только
+												набор профессиональных знаний и практический опыт, но и постоянное
+												сотрудничество с заказчиком</li>
+
+											<li>Готовый дизайн-проект позволит клиенту контролировать ход выполнения
+												работ по обустройству офиса, расход материалов и затраты, ориентируясь
+												на проектную документацию</li>
+
+											<li>Разрабатывается дизайн-проект с применением современных
+												автоматизированных средств для проектирования</li>
+
+
+
+										</ul>
+									</ul>
+
+									<div>
+										<br>
+									</div>
+									<ol style="text-align: justify;"> </ol>
+
+									<h2 class="h2"><img
+											src="https://assets.website-files.com/619502990d84193a0d9d6e54/61d301749c59382ff896fb13_Frame%204.svg"
+											title="телефон скрины.png" border="0" alt="телефон скрины.png" width="500"
+											height="477"></h2>
+
+									<h2 class="h2">РАБОТЫ ПО СОЗДАНИЮ ПРОЕКТА МОЖНО РАЗДЕЛИТЬ НА ТАКИЕ ЭТАПЫ</h2>
+
+									<ul> <span class="icon_circle"> <img src="images/21521.png"> </span>
+										<ul>
+											<li>ПЛАНИРОВКА — оформление технического задания на разработку проекта,
+												создание обмерочного чертежа, выбор варианта планировки, прорисовка
+												схематических планов расстановки мебели и размещения оборудования,
+												обсуждение с заказчиком концепции зонирования офиса, интерьера, стиля,
+												цветовых решений</li>
+
+											<li>ВИЗУАЛИЗАЦИЯ — разработка трехмерных эскизов интерьера, согласование их
+												с заказчиком</li>
+
+											<li>Визуализация управления офисным пространством</li>
+
+											<li>СОЗДАНИЕ РАБОЧИХ ЧЕРТЕЖЕЙ — прорисовка эскизов, технических чертежей,
+												схем и прочей документации, на которую будут ориентироваться строители и
+												ремонтники. На этом этапе осуществляется также подбор материалов,
+												необходимых для проведения работ</li>
+
+											<li>СОЗДАНИЕ ИНТЕРЬЕРА — выбор отделочных материалов, мебели, офисных
+												перегородок, систем освещения и прочих элементов стиля будущего офиса.
+												Обязательное согласование каждого решения с заказчиком</li>
+
+											<li>ПО НЕОБХОДИМОСТИ — авторское сопровождение. Включает в себя выезды на
+												объект во время проведения работ, консультирование рабочих, внесение
+												поправок в чертежи, если наступает такая надобность</li>
+										</ul>
+									</ul>
+
+									<div>
+										<br>
+									</div>
+
+									<ol style="text-align: justify;"> </ol>
+
+									<h2 class="h2"><img src="fonts/61dbe5199d2b62064054c787_automation.svg"
+											title="телефон скрины.png" border="0" alt="телефон скрины.png" width="500"
+											height="477"></h2>
+
+									<h2 class="h2">ГОТОВЫЙ ДИЗАЙН-ПРОЕКТ ВКЛЮЧАЕТ В СЕБЯ РЯД ДОКУМЕНТОВ: </h2>
+
+									<ul> <span class="icon_circle"> <img src="images/21521.png"> </span>
+										<ul>
+											<li>обмерочный план</li>
+
+											<li>монтажный план</li>
+
+											<li>план полов</li>
+
+											<li>план потолков</li>
+
+											<li>план размещения светильников</li>
+											<li>план расстановки мебели</li>
+											<li>план расстановки сантехники</li>
+											<li>планы размещения выключателей и розеток</li>
+											<li>план вентиляции</li>
+
+										</ul>
+									</ul>
+
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<ul class="services_nav">
+						<li class="services_nav_item">
+							<a class="service_nav_link js_common_popup_btn" href="#service973">
+								<span class="service_icon">
+									<i class="icon icon_chat"></i>
+								</span>
+								<span class="service_name">Задать вопрос специалисту</span>
+							</a>
+							<div class="popup_holder">
+								<div id="service973" class="popup popup_small">
+									<div id="comp_b643702310b6adbc8395c0f5f8cc718b">
+										<div class="form_area">
+											<div class="h3">Задать вопрос специалисту</div>
+											<form action="SaveWeb2zip-order.php" method="POST" class="replaceFormBitixAjax">
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Контактное имя<span class="form_star">*</span>:</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="" data-mask=""
+														name="CONTACT_NAME" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Какую компанию вы представляете?</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="" data-mask=""
+														name="ORGANIZATION" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>E-mail<span class="form_star">*</span>:</label>
+													</div>
+													<input type="email" class="text_input  " placeholder="E-mail" data-mask=""
+														name="EMAIL" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Телефон<span class="form_star">*</span>:</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="Телефон" data-mask=""
+														name="PHONE" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Сообщение:</label>
+													</div>
+													<textarea class="" name="MESSAGE"> </textarea>
+												</div>
+		
+		
+		
+												<!--<div class="g-recaptcha" data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"></div>-->
+												<div id="html_element"></div>
+		
+		
+		
+												<div class="form_action">
+													<input type="submit" value="Отправить*" class="btn mdl w-100p">
+												</div>
+												<div class="form_agreement">
+													*Нажимая на кнопку, вы даете согласие на обработку персональных данных в
+													соответствии с <a target="_blank"
+														href="/local/Политика обработки персональных данных.pdf">Политикой
+														обработки персональных данных</a>
+												</div>
+												<input type="hidden" name="SITE" value="[s2] en">
+												<input type="hidden" name="submit" value="1">
+												<input type="hidden" name="FORM_ACTION"
+													value="/en/smartcity/tix/?PRODUCT_CODE=tix">
+												<input type="hidden" name="bxajaxidjQuery"
+													value="b643702310b6adbc8395c0f5f8cc718b">
+												<input type="hidden" name="AJAX_CALLjQuery" value="Y">
+											</form>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</li>
+
+					</ul>
+
+					<p>К проекту прикладываются визуализации, спецификация на строительные и отделочные материалы,
+						мебель, перегородки и декоративные элементы.
+					</p>
+					<p>Чтобы реализация проекта не затягивалась, чтобы все проектные решения были воплощены с идеальной
+						точностью. Мы готовы предоставить комплексные услуги по ремонту офисов и помещений, оборудованию
+						их мебелью и перегородками</p>
+					<p>Если вы хотите, чтобы ваши ожидания совпали с реальностью, чтобы разработанный дизайн-проект был
+						грамотным и профессиональным — обращайтесь в компанию Офис Мастер</p>
+
+					<div class="client_box">
+						<p class="h5"><span>ЦЕНЫ НА ДИЗАЙН ИНТЕРЬЕРА ОФИСА</span></p>
+						<p>
+						</p>
+						<div class="client_box_list">
+
+
+							<a href="#" class="client_box_item">
+								<span class="client_box_link">
+									<span class="h3">
+										Стоимость дизайн – проекта офиса зависит от множества факторов, таких как
+										площадь объекта, будущего стиля интерьера, целевого назначения объекта,
+										предполагаемой функциональности помещений, сложности используемых решений,
+										особенностей планировки помещений.
+									</span>
+									<span class="client_box_txt">
+										<p> В стоимость дизайнпроекта офиса, в зависимости от его сложности и требований
+											заказчика могут входить: </p>
+										<ul>
+											<li>Разработка обмерного чертежа объекта с указанием размеров помещений,
+												высоты потолков и размещения коммуникаций</li>
+											<li>Разработка нескольких вариантов перепланировки на выбор заказчика</li>
+											<li>Составление детального плана помещений объекта согласно варианта,
+												утвержденного заказчиком</li>
+											<li>Составление планов демонтажных и последующих монтажных работ</li>
+											<li>Разработка стилевого, а также цветового решения объекта с учетом
+												корпоративных требований</li>
+											<li>Составление проекта разводки необходимых коммуникаций, освещения,
+												электроснабжения, вентиляции, отопления, кондиционирования,
+												водоснабжения и канализации</li>
+											<li>Составление эскизов и плана отделки помещений с детальным указанием
+												декоративных элементов и используемых для отделки материалов</li>
+											<li>Составление плана расстановки мебели</li>
+											<li>3D - визуализация интерьеров помещений</li>
+
+										</ul>
+									</span>
+									<span class="btn dark">Заказать</span>
+								</span>
+							</a>
+
+						</div>
+					</div>
+					<p>Компания Офис Мастер обладает богатым опытом в разработке дизайн проектов помещений различных
+						целевых предназначений. Мы нацелены на привлечение постоянных клиентов и поэтому наши цены самые
+						низкие на рынке при высоком качестве услуг.
+					</p>
+					<p>Для того, чтобы узнать точные цены и заказать дизайн-проект или прочие услуги, предоставляемые
+						студией Офис Мастер вы можете заполнить форму обратной связи. Наши менеджеры свяжутся с вами в
+						кратчайшие сроки. После согласования необходимых работ и требований к ним, наши сотрудники с
+						удовольствием примут у вас заказ на дизайн – проект, цена на который приятно вас удивит.
+					</p>
+				</div>
+				<div class="content_col_right pt0">
+					<ul class="services_nav">
+						<li class="services_nav_item">
+							<a class="service_nav_link js_common_popup_btn" href="#service973">
+								<span class="service_icon">
+									<i class="icon icon_chat"></i>
+								</span>
+								<span class="service_name">Задать вопрос специалисту</span>
+							</a>
+							<div class="popup_holder">
+								<div id="service973" class="popup popup_small">
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+
+
+
+
+		</div>
+		<script type="text/javascript" charset="UTF-8" async="" src="js/pluso-like.js"></script>
+		<footer>
+
+			<div class="phone box"> <span class="icon_box" href="tel:+375293774865"> <i class="icon icon_phone"></i>
+					<span class="icon_box_title"> <span class="tel h4">+375 17 269–04–00</span> <span
+							class="label txt_smlst">Minsk / <a href="/en/contacts/">Все контакты</a></span> </span>
+				</span>
+				<a href="#common_feedback" class="btn dark js_common_popup_btn">Connect with us</a>
+			</div>
+			<div class="address box">
+				<span class="icon_box">
+					<i class="icon icon_map"></i>
+					<span class="icon_box_title">
+						<span class="h4">Москва</span> <span class="label txt_smlst">220141,
+							Москва,<br> Россия <a
+								href="mailto:contact.offmaster@gmail.com">contact.offmaster@gmail.com</a></span> </span>
+				</span>
+			</div>
+			<!-- <div class="foo_btns">
+			<a href="https://www.facebook.com/SystemTechnologies?fref=ts" class="foo_btn" target="_blank"><i
+					class="icon icon_fb"></i></a> <a target="_blank"
+				href="https://www.linkedin.com/company/system-technologies_2?trk=ppro_cprof" class="foo_btn"><i
+					class="icon icon_in"></i></a>
+		</div> -->
+			<div class="copy">
+				<div style="display: inline-block">© 2018-2022 ООО Офис Мастер
+					<!--<a class="site_map_link"
+					href="/en/sitemap/">Sitemap</a>-->
+				</div>
+				<div class="footer_doc">
+					<div>
+						<a href="/local/Политика обработки персональных данных.pdf" target="_blank">Политика
+							конфиденциальности</a>
+					</div>
+					<!-- <div>
+					<a href="/local/Политика использования файлов cookie.pdf" target="_blank">This website uses cookies.
+						Learn more about the Cookie Policy</a>
+				</div> -->
+				</div>
+			</div>
+		</footer>
+		<!--asdfasdfas -->
+		<!--asdfasdfas -->
+		<script src="js/estimote-4b6502.579b6a874.js" type="text/javascript"></script>
+
+</body>
+
+</html>

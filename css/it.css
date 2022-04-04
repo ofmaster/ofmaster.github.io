@@ -31,6 +31,17 @@ body {
   font-weight: normal;
 }
 
+.technologies-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 body.language_az {
   font-family: "Dejavu Sans", Arial, sans-serif;
 }
@@ -1518,11 +1529,6 @@ header {
   color: #fff;
 }
 
-.slide_content {
-  background-color: rgba(22, 21, 17, 0.42);
- 
-}
-
 .page_slide {
   position: relative;
   height: 750px;
@@ -1858,44 +1864,12 @@ header {
   background-image: url(../images/slide_third.jpg);
 }
 
-.slide_design {
-  background-image: url(../images/office_bkg.jpg);
-}
-
-.slide_finance {
-  background-image: url(../images/finance_bkg.jpg);
-}
-
-.slide_cleen {
-  background-image: url(../images/cleen_bkg.jpg);
-}
-
-.slide_dev {
-  background-image: url(../images/dev_bkg.jpg);
-}
-
-.slide_smart {
-  background-image: url(../images/smart_bkg.jpg);
-}
-
-.slide_third
-  .slide_content
-  .slide_design
-  .slide_finance
-  .slide_cleen
-  .slide_dev
-  .slide_smart {
+.slide_third .slide_content {
   width: 70%;
   color: #fff;
 }
 
-.slide_third
-  .h1
-  .slide_design
-  .slide_finance
-  .slide_cleen
-  .slide_dev
-  .slide_smart {
+.slide_third .h1 {
   color: #fff;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
@@ -4007,13 +3981,7 @@ h3.search_title,
     width: 970px;
   }
 
-  .slide_third
-    .slide_content
-    .slide_design
-    .slide_finance
-    .slide_cleen
-    .slide_dev
-    .slide_smart {
+  .slide_third .slide_content {
     width: 80%;
   }
 }
@@ -4040,8 +4008,6 @@ h3.search_title,
 
   .page_slide {
     height: auto !important;
-    background-color: grey;
-    z-index: 10000;
   }
 
   .slide_menu {
@@ -4068,13 +4034,7 @@ h3.search_title,
     right: -51px;
   }
 
-  .slide_third
-    .slide_content
-    .slide_design
-    .slide_finance
-    .slide_cleen
-    .slide_dev
-    .slide_smart {
+  .slide_third .slide_content {
     width: 100%;
   }
 
@@ -5788,6 +5748,30 @@ iframe.waitwindowlocal {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 768px) {
+  .technologies-cards--item {
+    width: calc(33% - 30px);
+    margin: 15px;
+    padding: 30px;
+  }
+}
+
+.technologies-cards--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  // width: 100%;
+  /* margin: 5px;
+  padding: 20px;
+  -webkit-box-sizing: border-box; */
+  box-sizing: border-box;
+  position: relative;
 }
 /* End */
 /* /local/css/main.css */
