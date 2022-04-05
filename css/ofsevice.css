@@ -1047,6 +1047,8 @@ h1,
 
 h2,
 .h2 {
+  padding-top:85px;
+  padding-bottom: 45px;
   font-size: 22px;
   font-weight: bold;
 }

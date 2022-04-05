@@ -1041,7 +1041,7 @@ ol {
 h1,
 .h1 {
   margin-bottom: 20px;
-  font-size: 34px;
+  font-size: 44px;
   font-weight: bold;
 }
 
@@ -1081,8 +1081,8 @@ h5,
 }
 
 .txt_big {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 21px;
+  line-height: 30px;
 }
 
 .txt_smlst {
@@ -1519,7 +1519,7 @@ header {
 }
 
 .slide_content {
-  background-color: rgba(22, 21, 17, 0.42);
+  background-color: rgba(22, 21, 17, 0.67);
  
 }
 
