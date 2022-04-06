@@ -4041,7 +4041,7 @@ h3.search_title,
   .page_slide {
     height: auto !important;
     background-color: grey;
-    z-index: 10000;
+    /* z-index: 10000; */
   }
 
   .slide_menu {
