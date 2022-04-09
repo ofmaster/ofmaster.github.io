@@ -20,8 +20,7 @@ body {
   width: 100%;
 }
 
-.client_box_item li,
-.client_box_itm li {
+.client_box_item li {
   color: #848484;
 }
 

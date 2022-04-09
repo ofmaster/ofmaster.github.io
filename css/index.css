@@ -1522,6 +1522,9 @@ header {
   background-color: rgba(22, 21, 17, 0.67);
  
 }
+.slide_content_first {
+  background-color: rgba(22, 21, 17, 0.3) !important ;
+}
 
 .page_slide {
   position: relative;

@@ -5758,6 +5758,22 @@ iframe.waitwindowlocal {
   }
 }
 
+@media (max-width: 768px) {
+  .technologies-cards--item {
+    width: 45%;
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .technologies-cards--item {
+    width: 100%;
+    margin: 10px;
+    padding: 20px;
+  }
+}
+
 .technologies-cards--item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5766,7 +5782,7 @@ iframe.waitwindowlocal {
   -ms-flex-align: center;
   align-items: center;
   background-color: #f3f3f3;
-  // width: 100%;
+  height: 140px;
   /* margin: 5px;
   padding: 20px;
   -webkit-box-sizing: border-box; */
