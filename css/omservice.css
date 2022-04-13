@@ -21,7 +21,9 @@ body {
 }
 
 .client_box_item li {
-  color: #848484;
+  /* color: #848484; */
+  color: black;
+  font-size: 15px !important;
 }
 
 /* .client_box_itm {
@@ -247,6 +249,20 @@ select,
 .form_row .error_text {
   margin-bottom: 5px;
   margin-top: 2px;
+}
+
+.service_list {
+}
+
+.service_img {
+  padding-bottom: 30px;
+  width: 70%;
+}
+
+.service_txt {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .text_input_big {
@@ -1500,6 +1516,10 @@ header {
   white-space: nowrap;
 }
 
+span .h3 {
+  color: #3e5b99;
+}
+
 .slide_menu .active span:before {
   content: "←";
   display: inline-block;
@@ -2241,6 +2261,16 @@ header {
   position: relative;
   display: inline-block;
   vertical-align: top;
+
+  margin-right: -4px;
+  font-size: 13px;
+  padding: 0 20px 55px;
+}
+
+.client_price_item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
   width: 33.33%;
   margin-right: -4px;
   font-size: 13px;
@@ -2280,7 +2310,8 @@ header {
   z-index: 3;
 }
 
-.client_box_item .h3 {
+.client_box_item .h3,
+.client_price_item h3 {
   display: block;
   margin-bottom: 13px;
   padding: 0 5px 5px 75px !important;
@@ -2288,31 +2319,36 @@ header {
   height: 70px;
 }
 
-.client_box_item .h3:after {
+.client_box_item .h3:after,
+.client_price_item .h3:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
 
-.client_box_item .h3 > span {
+.client_box_item .h3 > span,
+.client_price_item .h3 > span {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 }
 
-.client_box_item .text_center + .h3 {
+.client_box_item .text_center + .h3,
+.client_price_item .text_center + .h3 {
   padding-left: 0 !important;
   padding-right: 0 !important;
   height: auto;
 }
 
-.client_box_item .h3:first-child {
+.client_box_item .h3:first-child,
+.client_price_item .h3:first-child {
   padding: 0 !important;
   height: auto;
 }
 
-.client_box_item .text_center + .h3:after {
+.client_box_item .text_center + .h3:after,
+.client_price_item .text_center + .h3:after {
   display: none;
 }
 
@@ -2322,7 +2358,8 @@ header {
   display: block;
 }
 
-.client_box_txt .client_box_item {
+.client_box_txt .client_box_item,
+.client_box_txt .client_price_item {
   padding: 0 20px 30px;
 }
 
@@ -2341,9 +2378,10 @@ header {
 
 .container .client_box_item {
   display: inline-block;
-  width: 50%;
 }
-
+.container .client_price_item {
+  display: inline-block;
+}
 .next_box {
   padding: 0 30px 42px;
   border-right: 1px solid #d5d5d5;
@@ -3381,7 +3419,11 @@ footer .phone {
 /* client box for 3 items
 ****************************************************/
 .client_box_3 .client_box_item {
-  width: 33.33%;
+  margin-right: -4px;
+  min-width: 0 !important;
+}
+
+.client_box_3 .client_price_item {
   margin-right: -4px;
   min-width: 0 !important;
 }
@@ -4353,6 +4395,11 @@ h3.search_title,
     font-size: 14px;
     width: 120px;
   }
+
+  .client_price_item:nth-child(5) .h3 > span {
+    font-size: 14px;
+    width: 120px;
+  }
 }
 
 @media only screen and (min-width: 1004px) {
@@ -4560,7 +4607,8 @@ h3.search_title,
     padding: 0 30px;
   }
 
-  .client_box_item {
+  .client_box_item,
+  .client_price_item {
     display: block;
     text-align: center;
     padding: 0;
@@ -4576,6 +4624,12 @@ h3.search_title,
     position: static;
   }
 
+  .client_price_item .client_box_txt ul li:before {
+    display: inline-block;
+    width: 18px;
+    position: static;
+  }
+
   .client_box_link .btn {
     display: none;
   }
@@ -4585,6 +4639,10 @@ h3.search_title,
   }
 
   .container .client_box_item {
+    width: 100%;
+  }
+
+  .container .client_price_item {
     width: 100%;
   }
 
@@ -4701,6 +4759,11 @@ h3.search_title,
   }
 
   .client_box_item:nth-child(5) .h3 > span {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .client_price_item:nth-child(5) .h3 > span {
     font-size: 18px;
     width: auto;
   }
