@@ -255,8 +255,13 @@ select,
 }
 
 .service_img {
-  padding-bottom: 30px;
+  padding: 30px;
   width: 70%;
+  max-width: 500px;
+}
+.photo_block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .service_txt {
