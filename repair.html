@@ -1,380 +1,1214 @@
 <!DOCTYPE html>
-
-
 <html lang="ru">
-<head>
-	<title>Офис-Мастер</title>
-	<meta name="keywords"
-	content="обслуживание офисов, уборка квартир, клининг, уборка помещений, продажа бу техники">
-	<meta name="description" content="Обслуживание квартир и офисов">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name=viewport
-	content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link href="css/documents.css" rel="stylesheet">
-	<link href="css/fonts.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/animate.css" />
-	<!--link href="https://3dsec.sberbank.ru/demopayment/docsite/assets/css/modal.css" rel="stylesheet"-->
-	<script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
-	<!--script src="https://3dsec.sberbank.ru/demopayment/docsite/assets/js/ipay-modal.js"></script-->
-	<script type="text/javascript">
-		var ipay = new IPAY({
-			api_token : "ir1tpckvp7nc8gkuicpptnq6g1"
-		});
-	</script>
-	<script  src="js/jquery-3.1.1.min.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script  src="js/anypages.js"></script>
-</head>
-<body class='clear' id='start' >
 
-	<div class='navbar'>
-		<div class='navbar-in'>
-			<div class='logo l' id='index.html'></div>	
-			<div class='service_us l' id='service'>Услуги</div>	
-			<div class='l hide'></div>	
-			<div class='l hide'></div>	
-			<div class='about_us l' id='#about_us_url'>О нас</div>	
-			<div class='phone l'>8 (495) 98-98-431</div>	
-		</div>
-		<div class='navbar-hide'>
-			<div id='documents.html'>Документо оборот</div>
-			<div id='daas.html'>Виртуальный офис (DaaS)</div>
-			<div id='konc.html'>Канцелярские товары</div>
-			<div id='cleening.html'>Уборка помещений</div>
-			<div id='techniks.html'>Купля/продажа офисной техники б/у</div>
-		</div>
-	</div>
-	<div class='office_img'>
-		<div class='office_img_in'>
-			<div class='wow bounceIn'>Наша компания оказывает услуги по комплексному обслуживанию квартир и  офисов</div>
-			
-		</div>
-	</div>
-	<div class='service'  id='srv_2'>
-		<div class='service_in'>
-			<div class='service_img repair r wow fadeInDown' >
-				<div class='service_name'>
-					<div class='name_txt'>Техническое обслуживание квартир и офисов</div>
+<head>
+	<title>Офис Мастер</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="format-detection" content="telephone=no">
+
+	<meta property="og:title" content="Офис Мастер">
+	<meta property="og:description" content="Офис Мастер">
+	<meta property="og:image" content="images/graphlogobig.png">
+	<meta property="og:image:width" content="968">
+	<meta property="og:image:height" content="504">
+	<!-- <meta property="og:image" content="http://www.st.by/local/img/404_bg.jpg"> -->
+	<meta property="og:url" content="https://off-master.ru/">
+	<meta property="og:type" content="website">
+
+
+
+	<link
+		href="https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic,hebrew,greek-ext,greek"
+		rel="stylesheet" type="text/css">
+
+	<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+	<meta name="robots" content="index, follow">
+	<meta name="keywords" content="banks">
+	<meta name="description"
+		content="The company SYSTEM TECHNOLOGIES offers a wide range of software solutions for automation and management of banking systems.">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,cyrillic-ext" type="text/css"
+		rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic,500,500italic,300,300italic&subset=latin,cyrillic-ext,greek-ext,latin-ext,greek"
+		type="text/css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:700" type="text/css" rel="stylesheet">
+	<link href="css/ofsevice.css" type="text/css" data-template-style="true" rel="stylesheet">
+	<script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PJ648D"></script>
+
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript"
+		src="https://www.google.com/recaptcha/api.js?onload=onloadRecaptchafree&render=explicit&hl=en"></script>
+	<script type="text/javascript" src="js/core.js"></script>
+	<script type="text/javascript" src="js/core_ajax.js"></script>
+	<script type="text/javascript" src="js/json2.min.js"></script>
+	<script type="text/javascript" src="js/core_ls.js"></script>
+	<script type="text/javascript" src="js/session.js"></script>
+	<script
+		type="text/javascript">BX.setCSSList(['/bitrix/js/main/core/css/core.css?14308180995336', '/local/css/main.css?164519127693271', '/local/css/ajax.css?14308181071425']); </script>
+	<link rel="canonical" href="https://off-master.ru/sphere/banks/">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/ajax.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.stellar.min.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.waypoints.min.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.easing.1.3.js"></script>
+	<script media="screen and (min-width=1400)" src="js/jquery.spritely.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/custom.js"></script>
+	<script type="text/javascript">
+		bxSession.Expand(1440, "803a84d44cb321db55caee1e5aee1b90", false, "b23bb64224ba863add3437443f12b8d5");
+	</script>
+	<script
+		type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "4db852ee09845af5b6f7856dd1967c73"]); _ba.push(["host", "www.st.by"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
+	<script
+		type="text/javascript">BX.setCSSList(["/bitrix/js/main/core/css/core.css?14308180995336", "/local/css/main.css?146649898190893", "/local/css/ajax.css?14308181071425"]); </script>
+
+
+
+	<script type="text/javascript">
+		bxSession.Expand(1440, 'bed05feb4058d2bb0ee1ba07d62bff55', false, '71f5095cd29907bdcb3b2ee6f1ea8a4a');
+	</script>
+	<script
+		type="text/javascript">var _ba = _ba || []; _ba.push(["aid", "4db852ee09845af5b6f7856dd1967c73"]); _ba.push(["host", "www.st.by"]); (function () { var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true; ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ba, s); })();</script>
+
+
+
+</head>
+
+<body class="language_en">
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJ648D" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-PJ648D');</script>
+	<!-- End Google Tag Manager -->
+	<!-- 	//= templates/header.html -->
+	<div class="wrapper clearfix">
+		<aside class="left_col">
+			<div class="left_col_cont">
+				<header>
+					<style>
+						/*.top_menu_item{
+						width: 25%;
+					}*/
+					</style>
+
+					<!-- <div class="container"> -->
+					<div class="logo_box">
+						<!--<a href="/" class="logo_link" title="На главную">
+					<span class="icon logo"></span>
+					<span class="logo_text">СИСТЕМНЫЕ ТЕХНОЛОГИИ</span>
+				</a>!-->
+						<a class="logo_link" href="/" title="To main"> <img src="images/logo.png"
+								alt="СИСТЕМНЫЕ ТЕХНОЛОГИИ"> </a>
+					</div>
+					<div class="mob_menu"><i class="hamburger"></i></div>
+					<nav class="main_menu">
+						<ul class="main_menu_list">
+							<li class="main_menu_item  ">
+								<a class="main_menu_m_link" href="/"><i class="cross"></i>Главная</a>
+
+							</li>
+							<li class="main_menu_item  ">
+								<a class="main_menu_m_link" href="#"><i class="cross"></i>Услуги</a>
+								<ul class="submenu">
+									<li>
+										<!-- <p class="h5">Solutions</p> -->
+										<ul class="submenu_list">
+											<li class=""><a href="/omservice.html">Умный офис Office – Master
+												</a>
+											</li>
+											<li class=""><a href="/ofservice.html">Комплексное обслуживание
+													офиса</a></li>
+											<li class=""><a href="/design.html">Дизайн офисных пространств</a>
+											</li>
+											<li class=""><a href="/repair.html">Ремонт офисных пространств под
+													ключ
+												</a></li>
+											<li class=""><a href="/it.html">Разработка и доработка программного
+													обеспечения</a></li>
+
+										</ul>
+									</li>
+
+
+								</ul>
+							</li>
+
+							<li class="main_menu_item  ">
+								<a href="/contacts.html/" class="main_menu_m_link"><i class="cross"></i>Контакты</a>
+
+							</li>
+
+						</ul>
+					</nav>
+					<div class="search box">
+						<!-- <form action="SaveWeb2zip-order.php" method="POST">
+							<div class="input">
+								<input type="text" class="text_input" name="q" autocomplete="off">
+								<button type="submit" class="icon icon_search"></button>
+							</div>
+						</form> -->
+					</div>
+					<!-- </div> -->
+
+				</header>
+
+				<div class="box not_a_bottom_box"> <span class="icon_box" href="tel:+79652981479"> <i class="icon icon_phone"></i>
+						<span class="icon_box_title"> <span class="tel h4">+7-965-298-14-79</span> <span class="label txt_smlst">Москва / <a href="/contacts.html/">Все
+									контакты</a></span> </span> </span> <a href="#common_feedback"
+						class="btn dark js_common_popup_btn">Связаться с нами</a>
+					<div class="popup_holder">
+						<div class="popup popup_small" id="common_feedback">
+							<div id="comp_4ebe63e52f85f5e734cdabedd8e16519">
+								<div class="form_area">
+									<div class="h3">Задать вопрос специалисту</div>
+									<form action="SaveWeb2zip-order.php" method="POST" class="replaceFormBitixAjax">
+
+										<div class="label_top form_row ">
+											<div class="form_label">
+												<label>Контактное имя<span class="form_star">*</span>:</label>
+											</div>
+											<input type="text" class="text_input  " placeholder="" data-mask=""
+												name="CONTACT_NAME" value="">
+										</div>
+
+										<div class="label_top form_row ">
+											<div class="form_label">
+												<label>Какую компанию вы представляете?</label>
+											</div>
+											<input type="text" class="text_input  " placeholder="" data-mask=""
+												name="ORGANIZATION" value="">
+										</div>
+
+										<div class="label_top form_row ">
+											<div class="form_label">
+												<label>E-mail<span class="form_star">*</span>:</label>
+											</div>
+											<input type="email" class="text_input  " placeholder="E-mail" data-mask=""
+												name="EMAIL" value="">
+										</div>
+
+										<div class="label_top form_row ">
+											<div class="form_label">
+												<label>Телефон<span class="form_star">*</span>:</label>
+											</div>
+											<input type="text" class="text_input  " placeholder="Телефон" data-mask=""
+												name="PHONE" value="">
+										</div>
+
+										<div class="label_top form_row ">
+											<div class="form_label">
+												<label>Сообщение:</label>
+											</div>
+											<textarea class="" name="MESSAGE"> </textarea>
+										</div>
+
+
+
+										<!--<div class="g-recaptcha" data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"></div>-->
+										<div id="html_element"></div>
+
+
+
+										<div class="form_action">
+											<input type="submit" value="Отправить*" class="btn mdl w-100p">
+										</div>
+										<div class="form_agreement">
+											*Нажимая на кнопку, вы даете согласие на обработку персональных данных в
+											соответствии с <a target="_blank"
+												href="/local/Политика обработки персональных данных.pdf">Политикой
+												обработки персональных данных</a>
+										</div>
+										<input type="hidden" name="SITE" value="[s2] en">
+										<input type="hidden" name="submit" value="1">
+										<input type="hidden" name="FORM_ACTION"
+											value="/en/smartcity/tix/?PRODUCT_CODE=tix">
+										<input type="hidden" name="bxajaxidjQuery"
+											value="b643702310b6adbc8395c0f5f8cc718b">
+										<input type="hidden" name="AJAX_CALLjQuery" value="Y">
+									</form>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+
+
 				</div>
 			</div>
-			<div class='detail l wow fadeInDown'>
-			Конкурентные преимущества:</br>
-			В компании «Офис-Мастер» работают только высоко-квалифици-рованные специалисты с большим опытом работы. Наши вежливые и опрятные сотрудники делают все быстро и в срок.  Просто оформите вызов, позвонив нам, и к Вам приедет настоящий мастер на все руки!
+		</aside>
+		<div class="right_col">
+			<div class="header"
+				style="background-image: url('images/%5E53CF24D3D0AC7E8A11565E8731E2B917D5F57A198211B40F0A%5Epimgpsh_fullsize_distr.jpg');">
+
+				<h1>
+					Комплексное обслуживание офиса</h1>
+				<h2 class="sub_title"></h2>
+				<!-- <a href="/en/product/ebanking-channels/" class="btn">eBanking channels</a>
+				<a href="/en/product/crm/" class="btn">CRM</a>
+				<a href="/en/product/front-to-back/" class="btn">Front to back</a>
+				<a href="/en/product/core-banking/" class="btn">Core banking</a>
+				<a href="/en/product/risk-management/" class="btn">Risk Management</a>
+				<a href="/en/product/accounting-reporting/" class="btn">Accounting & reporting</a>
+				<a href="/en/product/bi/" class="btn">BI</a> -->
+			</div>
+			<div class="content clearfix">
+				<div class="content_col">
+					<div class="container">
+						<h2 class="h2">Комплексная уборка офиса</h2>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_el"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Ежедневная уборка офиса </span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Правила уборки и общая последовательность действий
+													Независимо от периодичности уборки и типа помещений, работы
+													проводятся по общему плану
+												</span>
+												<ul>
+													<!-- 
+													<li>Подготовка всего необходимого инвентаря, средств, техники</li>
+													<li>Уход за растениями (если обязанности уборщика это включают)</li>
+													<li>Уборка мебели, подоконников, полок, оргтехники и других
+														поверхностей. Начать следует с сухой протирки, чтобы убрать пыль
+														и -мелкий мусор. И только после этого можно протереть
+														поверхности влажной салфеткой</li>
+													<li>Мойка, дезинфекция, полировка тех поверхностей, которые этого
+														требуют</li>
+													<li>Сухая уборка мягкой мебели и пола (лучше, если для этого
+														используется пылесос, а на щетки и веники)</li>
+													<li>Влажная уборка пола</li> -->
+
+													<li>Собрать и вынести мусор из корзин, шредеров. Заменить мусорные
+														пакеты. </li>
+													<li>Стереть пыль с открытых поверхностей мебели, подоконников,
+														дверей.
+													</li>
+													<li>Удалить паутину.</li>
+													<li>Протереть оргтехнику.</li>
+													<li>Протереть (продезинфицировать) часто загрязняемые поверхности –
+														дверные ручки, кнопки лифтов, выключатели, перила.
+													</li>
+													<li>Почистить пылесосом мягкую мебель, ковролин, ковровые дорожки.
+													</li>
+													<li>Вымыть полы.</li>
+													<li>Полить растения, убрать с них пыль, заменить воду в вазах с
+														цветами.</li>
+													<li>Вымыть и продезинфицировать сантехнику.</li>
+													<li>Оттереть локальные загрязнения с облицовочной плитки (на высоте
+														до 1,5 м).
+													</li>
+													<li>Проверить наличие в санузлах мыла, бумаги, полотенец. Пополнить
+														запасы.</li>
+													<li>Навести порядок в офисной кухне, гардеробе, других служебных
+														помещениях.</li>
+													<li>Убрать входную зону.
+													</li>
+													<li>Проветрить офис.
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+										<!-- <div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Во время работ соблюдаем правила</span>
+												<ul>
+
+													<li>Всегда убираем поверхности, двигаясь сверху вниз. То есть,
+														сначала верхние полки шкафов, потом столы, потом полы, а не
+														наоборот</li>
+													<li>Убирая полы, двигаемся от дальних углов к выходу из помещения
+													</li>
+													<li>Протирая мебель, технику, двери, очищаем не только
+														горизонтальные поверхности, но и вертикальные – на них тоже
+														лежит пыль, могут быть пятна и брызги</li>
+													<li>Рабочие места сотрудников убираем только с их согласия. Все
+														бумаги, вещи, мониторы, компьютерные мыши после уборки должны
+														остаться на своих местах</li>
+													<li>Учитываем тип поверхности. Нельзя вытирать оргтехнику влажными
+														тряпками, тереть мебель абразивами, мыть окрашенные стены.
+														Для техники лучше использовать специальные салфетки с
+														пропитками</li>
+													<li>Уделяем внимание мелким элементам техники – очищаем от пыли
+														компьютерные провода, фильтры, роутеры. Это нужно делать так,
+														чтобы не отсоединить их от розеток и системных блоков</li>
+
+												</ul>
+
+											</span>
+										</div> -->
+
+									</div>
+								</div>
+
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_ntw"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Периодическая уборка офиса</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Периодическая уборка офиса (например, раз в неделю)
+													Это такие работы, которые не нужно делать каждый день, но и нельзя
+													откладывать на полгода или год до следующей генеральной уборки
+												</span>
+												<ul>
+
+													<li>Отполировать зеркала, стеклянные поверхности, окна (как правило,
+														мойку окон проводят во время генеральной уборки или заказывают
+														отдельной услугой, но время от времени приходится удалять
+														локальные загрязнения на стеклах изнутри, чтобы поддерживать их
+														в приличном состоянии). </li>
+													<li>Убрать пыль со светильников.
+													</li>
+													<li>Удалить паутину.</li>
+													<li>Протереть декоративные элементы на стенах, внутренние вывески,
+														таблички.
+													</li>
+													<li>Тщательно почистить мягкую мебель. </li>
+													<li>Удалить локальные загрязнения и пятна со стен.
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+
+									</div>
+								</div>
+
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_bank"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Генеральная уборка офиса</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Даже если у вас в штате есть достаточно уборщиц, для
+													проведения генеральной уборки лучше привлечь профессиональную
+													клининговую компанию. У специалистов есть
+												</span>
+												<ul>
+
+													<li>Мощное профессиональное оборудование для уборки пыли, чистки
+														мебели и ковров, размывки напольной плитки и гранита, полировки
+														паркета. </li>
+													<li>Доступ к высотным работам – от мытья потолочных светильников до
+														высотной мойки окон. Штатные уборщицы не обязаны убирать
+														поверхности, до которых не достают с пола.
+
+													</li>
+													<li>Качественные средства для чистки различных поверхностей, которые
+														и грязь отмоют, и отделку не повредят.
+													</li>
+													<li>Большой опыт, который позволяет сделать правильную генералку –
+														быструю, качественную и с минимальными затратами с вашей
+														стороны.
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Что входит в генеральную уборку офиса? Очистка всех
+													поверхностей в помещении.
+												</span>
+												<ul>
+
+													<li>Обеспылить потолки. </li>
+													<li>Удалить паутину со всех уголков, пазов, щелей, за мебелью. </li>
+													<li>Протереть потолочные и настенные светильники.
+													</li>
+													<li>Очистить стены от пыли, грязи и пятен. В зависимости от типа
+														покрытия, их можно помыть, протереть или пропылесосить, а пятна
+														удалить специальными средствами.
+													</li>
+													<li>Очистить настенный декор, вывески, стенды.</li>
+													<li>Вымыть двери.</li>
+													<li>Вымыть окна.
+													</li>
+													<li>Почистить жалюзи, постирать шторы.
+													</li>
+													<li>Обеспылить, вымыть радиаторы и трубы отопления.
+													</li>
+													<li>Почистить решетки вентиляции, кондиционеры.
+													</li>
+													<li>Тщательно протереть столы, полки, шкафы, оттирая все пятна (по
+														возможности не только снаружи, но и изнутри).
+													</li>
+													<li>Удалить пыль, пятна и разводы с оргтехники.
+													</li>
+													<li>Почистить мягкую мебель.</li>
+													<li>Вымыть и отполировать стеклянные, зеркальные, хромированные
+														поверхности.
+													</li>
+													<li>Почистить ковровые покрытия.</li>
+													<li>Вымыть бытовую технику в офисной кухне (внутри и снаружи).
+													</li>
+													<li>Помыть, почистить и продезинфицировать все поверхности в
+														санузлах (стены, двери, перегородки, сантехнику, зеркала).
+													</li>
+													<li>Почистить напольные покрытия, используя соответствующую
+														технологию.
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_kuvert"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Уборка отдельных офисных помещений </span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Конференц-зал, Кабинеты сотрудников, офисы опен-спейс:
+												</span>
+												<ul>
+
+													<li>Убрать пыль со всех открытых поверхностей.</li>
+													<li>Протереть столы, не перемещая бумаг и других предметов.
+													</li>
+													<li>Удалить паутину.Пропылесосить ковролин, мягкую мебель.
+													</li>
+													<li>Собрать пыль, удалить пятна с оргтехники.
+													</li>
+													<li>Сделать влажную уборку подоконников.</li>
+													<li>Удалить локальные загрязнения с дверного полотна.
+													</li>
+													<li>Помыть (продезинфицировать) дверные ручки.</li>
+													<li>Вытереть пыль с настольных ламп, торшеров.
+													</li>
+													<li>Протереть от пыли стеклянные перегородки, остекление дверей,
+														зеркала.
+													</li>
+													<li>Удалить со всех стеклянных поверхностей пятна, следы пальцев,
+														разводы.
+													</li>
+													<li>Очистить мусорные корзины.
+													</li>
+													<li>Сделать влажную уборку пола.
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+
+									</div>
+								</div>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Офисная кухня: </span>
+												<ul>
+
+													<li>Убрать пыль с открытых полок.</li>
+													<li>Навести порядок в шкафах – убрать пятна, рассыпавшиеся продукты,
+														выбросить просроченные запасы, разложить все по местам.
+
+													</li>
+													<li>Вымыть и продезинфицировать поверхности столов.
+													</li>
+													<li>Очистить бытовую технику – холодильник, микроволновку,
+														кофе-машину.
+													</li>
+													<li>Вымыть посуду.
+													</li>
+													<li>Протереть кухонный фартук (стену), удаляя все брызги и пятна от
+														пищи, напитков.
+													</li>
+													<li>Очистить стулья, диваны – пропылесосить или протереть, в
+														зависимости от типа покрытия.</li>
+													<li>Вымыть подоконник, дверные ручки.
+
+													</li>
+													<li>Протереть дверь.
+													</li>
+													<li>Вынести мусор, продезинфицировать корзину, заменить мусорный
+														пакет.
+													</li>
+
+
+												</ul>
+
+											</span>
+										</div>
+
+
+									</div>
+								</div>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">Санузел: </span>
+												<ul>
+
+													<li>Почистить и продезинфицировать унитазы, писсуары.
+													</li>
+													<li>Вымыть и протереть умывальники.
+													</li>
+													<li>Помыть и отполировать все краны, смесители, кнопки слива.
+													</li>
+													<li>Вымыть и натереть до блеска зеркала и стеклянные поверхности.
+													</li>
+													<li>Убрать пыль со светильников, удалить с них локальные
+														загрязнения.
+													</li>
+													<li>Очистить наружные поверхности электросушилок, дозаторов мыла,
+														диспенсеров для бумажных полотенец и туалетной бумаги.
+													</li>
+													<li>Проверить наличие бумаги, полотенец и мыла, при необходимости
+														пополнить их запас.
+													</li>
+													<li>Протереть дверное полотно, подоконники.
+													</li>
+													<li>Помыть и продезинфицировать дверные ручки.
+													</li>
+													<li>Протереть облицовочную плитку на доступной высоте.
+													</li>
+													<li>Вынести мусор, продезинфицировать корзины, заменить мусорные
+														пакеты.
+													</li>
+													<li>Вытереть плинтусы.
+													</li>
+													<li>Вымыть пол.</li>
+
+
+												</ul>
+
+											</span>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<h2 class="h2">Комплексное снабжение офисов и других помещений</h2>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_sys"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение офиса</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">ОФИС:
+
+												</span>
+												<ul>
+													<li>канцелярские товары </li>
+													<li>бумага
+													</li>
+													<li>офисная мебель</li>
+													<li>светильники</li>
+													<li>электролампы
+													</li>
+													<li>баки и мешки для мусора
+													</li>
+													<li>расходные материалы для оргтехники</li>
+													<li>оргтехника (ламинаторы, резаки для бумаги, шредеры, брошюраторы)
+														чистящие средства для чистки оргтехники и мебели</li>
+													<li>вешалки</li>
+													<li> зеркала и другие офисные аксессуары
+													</li>
+													<li>одноразовая посуда</li>
+													<li>чай, кофе, сахар</li>
+													<li>изготовим печати и штампы
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_mngmnt"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение склада</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">СКЛАД:
+
+												</span>
+												<ul>
+													<li>шпагат</li>
+													<li>стрейч-пленка
+													</li>
+													<li>перчатки</li>
+													<li>спецодежда</li>
+													<li> средства индивидуальной защиты
+													</li>
+													<li>пломбы и пломбираторы
+													</li>
+													<li>стеллажи, сигнальная лента, лестницы, стремянки</li>
+													<li>этикет-пистолеты</li>
+													<li>диспенсеры для скотча</li>
+													<li>щетки для уборки помещений
+													</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_calc"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение производств</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">ПРОИЗВОДСТВО:
+
+												</span>
+												<ul>
+													<li>уборочный инвентарь, хоз. инвентарь</li>
+													<li>ручной инструмент
+													</li>
+													<li>спецодежда и обувь</li>
+													<li>сигнальные ленты</li>
+													<li> пластиковая тара
+													</li>
+													<li>метизы
+													</li>
+													<li>лакокрасочная продукция</li>
+													<li>знаки, скотч (клейкая лента)</li>
+													<li>стрейч-пленка, упаковочная бумага</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_trade"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение точек общественного питания</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">ОБЩЕПИТ:
+
+												</span>
+												<ul>
+													<li>украшения и трубочки для коктейлей</li>
+													<li>зубочистки
+													</li>
+													<li>салфетки</li>
+													<li>санитарно-гигиеническая продукция</li>
+													<li> диспенсеры для мыла и бумаги
+													</li>
+													<li>спецодежда
+													</li>
+													<li>бытовая и профессиональная химия</li>
+													<li>пакеты для льда</li>
+													<li>ланч-боксы, одноразовая посуда</li>
+
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_automation"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение учебных заведений</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">УЧЕБНЫЕ ЗАВЕДЕНИЯ:
+
+												</span>
+												<ul>
+													<li>доски для мела и магнитно-маркерные</li>
+													<li>учебная мебель и кафедры </li>
+													<li>демонстрационное оборудование</li>
+													<li>кульманы</li>
+													<li>чертежные наборы </li>
+													<li>ватман </li>
+													<li>бумага</li>
+													<li>канцтовары</li>
+													<li>учебные пособия </li>
+
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_automation"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение торговых точек</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">ТОРГОВАЯ ТОЧКА:
+
+												</span>
+												<ul>
+													<li>упаковочный материал (пакеты ПНД и ПВД, стрейч-пленка, шпагат,
+														скотч) диспенсеры</li>
+													<li>этикет-пистолеты </li>
+													<li>этикет-лента</li>
+													<li>ценники</li>
+													<li>бланки</li>
+													<li>чековая лента для ККМ</li>
+													<li>весовая термоэтикетка</li>
+													<li>крафт-бумага</li>
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="accordion_item">
+							<a href="#" class="ac_title">
+								<span class="ac_title_icon">
+									<span class="icon_circle">
+										<i class="icon icon_automation"></i>
+									</span>
+								</span>
+								<span class="ac_title_text">Снабжение банков</span>
+								<span class="ac_cntrl"><i class="icon icon_rt_arrow"></i></span>
+							</a>
+							<div class="ac_content">
+								<p class="txt_big">
+								</p>
+								<div class="client_box">
+									<div class="client_box_list">
+										<div class="client_box_item">
+
+											<span class="client_box_link">
+												<span class="h3">БАНКИ:
+
+												</span>
+												<ul>
+													<li>бумага всех форматов</li>
+													<li>перфорированная бумага</li>
+													<li>рулоны для плоттеров</li>
+													<li>чековая термолента для ККМ и банкоматов всех видов</li>
+													<li>товары для инкассации (пломбы свинцовые и пластиковые, номерные,
+														пломбираторы, шпагат, сумки для инкассаторов, препроводительные
+														ведомости)</li>
+													<li>бандерольные кольца для денег</li>
+												</ul>
+
+											</span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="next_box">
+
+					</div>
+					<ul class="services_nav">
+						<li class="services_nav_item">
+							<a class="service_nav_link js_common_popup_btn" href="#service973">
+								<span class="service_icon">
+									<i class="icon icon_chat"></i>
+								</span>
+								<span class="service_name">Задать вопрос специалисту</span>
+							</a>
+							<div class="popup_holder">
+								<div id="service973" class="popup popup_small">
+									<div id="comp_b643702310b6adbc8395c0f5f8cc718b">
+										<div class="form_area">
+											<div class="h3">Задать вопрос специалисту</div>
+											<form action="SaveWeb2zip-order.php" method="POST" class="replaceFormBitixAjax">
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Контактное имя<span class="form_star">*</span>:</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="" data-mask=""
+														name="CONTACT_NAME" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Какую компанию вы представляете?</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="" data-mask=""
+														name="ORGANIZATION" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>E-mail<span class="form_star">*</span>:</label>
+													</div>
+													<input type="email" class="text_input  " placeholder="E-mail" data-mask=""
+														name="EMAIL" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Телефон<span class="form_star">*</span>:</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="Телефон" data-mask=""
+														name="PHONE" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Сообщение:</label>
+													</div>
+													<textarea class="" name="MESSAGE"> </textarea>
+												</div>
+		
+		
+		
+												<!--<div class="g-recaptcha" data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"></div>-->
+												<div id="html_element"></div>
+		
+		
+		
+												<div class="form_action">
+													<input type="submit" value="Отправить*" class="btn mdl w-100p">
+												</div>
+												<div class="form_agreement">
+													*Нажимая на кнопку, вы даете согласие на обработку персональных данных в
+													соответствии с <a target="_blank"
+														href="/local/Политика обработки персональных данных.pdf">Политикой
+														обработки персональных данных</a>
+												</div>
+												<input type="hidden" name="SITE" value="[s2] en">
+												<input type="hidden" name="submit" value="1">
+												<input type="hidden" name="FORM_ACTION"
+													value="/en/smartcity/tix/?PRODUCT_CODE=tix">
+												<input type="hidden" name="bxajaxidjQuery"
+													value="b643702310b6adbc8395c0f5f8cc718b">
+												<input type="hidden" name="AJAX_CALLjQuery" value="Y">
+											</form>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="services_nav_item">
+							<a class="service_nav_link js_common_popup_btn" href="#service975">
+								<span class="service_icon">
+									<i class="icon icon_slide"></i>
+								</span>
+								<span class="service_name">Order a presentation</span>
+							</a>
+							<div class="popup_holder">
+								<div id="service975" class="popup popup_small">
+									<div id="comp_e6179d52678349da96c29cfdea919d1b">
+										<div class="form_area">
+											<div class="h3">Задать вопрос специалисту</div>
+											<form action="SaveWeb2zip-order.php" method="POST" class="replaceFormBitixAjax">
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Контактное имя<span class="form_star">*</span>:</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="" data-mask=""
+														name="CONTACT_NAME" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Какую компанию вы представляете?</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="" data-mask=""
+														name="ORGANIZATION" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>E-mail<span class="form_star">*</span>:</label>
+													</div>
+													<input type="email" class="text_input  " placeholder="E-mail" data-mask=""
+														name="EMAIL" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Телефон<span class="form_star">*</span>:</label>
+													</div>
+													<input type="text" class="text_input  " placeholder="Телефон" data-mask=""
+														name="PHONE" value="">
+												</div>
+		
+												<div class="label_top form_row ">
+													<div class="form_label">
+														<label>Сообщение:</label>
+													</div>
+													<textarea class="" name="MESSAGE"> </textarea>
+												</div>
+		
+		
+		
+												<!--<div class="g-recaptcha" data-sitekey="6LftTBIUAAAAAGqr7blbE-umVtiaAeZIrqFN1t2X"></div>-->
+												<div id="html_element"></div>
+		
+		
+		
+												<div class="form_action">
+													<input type="submit" value="Отправить*" class="btn mdl w-100p">
+												</div>
+												<div class="form_agreement">
+													*Нажимая на кнопку, вы даете согласие на обработку персональных данных в
+													соответствии с <a target="_blank"
+														href="/local/Политика обработки персональных данных.pdf">Политикой
+														обработки персональных данных</a>
+												</div>
+												<input type="hidden" name="SITE" value="[s2] en">
+												<input type="hidden" name="submit" value="1">
+												<input type="hidden" name="FORM_ACTION"
+													value="/en/smartcity/tix/?PRODUCT_CODE=tix">
+												<input type="hidden" name="bxajaxidjQuery"
+													value="b643702310b6adbc8395c0f5f8cc718b">
+												<input type="hidden" name="AJAX_CALLjQuery" value="Y">
+											</form>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+				</div>
+				<div class="content_col_right">
+					<ul class="services_nav">
+						<li class="services_nav_item">
+							<a class="service_nav_link js_common_popup_btn" href="#service973">
+								<span class="service_icon">
+									<i class="icon icon_chat"></i>
+								</span>
+								<span class="service_name">Задать вопрос специалисту</span>
+							</a>
+							<div class="popup_holder">
+								<div id="service973" class="popup popup_small">
+								</div>
+							</div>
+						</li>
+
+					</ul>
+				</div>
+
+			</div>
+
+
+
+
 		</div>
 	</div>
-</div>
+	<script type="text/javascript" charset="UTF-8" async="" src="js/pluso-like.js"></script>
+	<footer>
 
-<div class='price_list'>
-	<div class='pos_spis'>
-		<div class='usluga_name'>Установка крупной бытовой техники и сантехники</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка и сбор душевых кабин </div>
-			<div class='pos_price'>от <span>4500</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
+		<div class="phone box"><span class="icon_box" href="tel:+79652981479"> <i class="icon icon_phone"></i>
+			<span class="icon_box_title"> <span class="tel h4">+7-965-298-14-79</span> <span class="label txt_smlst">Москва / <a
+						href="/contacts.html">Все
+						контакты</a></span> </span> </span> <a href="#common_feedback"
+			class="btn dark js_common_popup_btn">Связаться с нами</a>
 		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка и подключение смесителей</div>
-			<div class='pos_price'>от <span>2000</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
+		<div class="address box">
+			<span class="icon_box">
+				<i class="icon icon_map"></i>
+				<span class="icon_box_title">
+					<span class="h4">Москва</span> <span class="label txt_smlst">220141,
+						Москва,<br> Россия <a
+							href="mailto:info@off-master.ru">info@off-master.ru</a></span> </span>
+			</span>
 		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка ванны</div>
-			<div class='pos_price'>от <span>5000</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка унитазов</div>
-			<div class='pos_price'><span>990</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка стиральной машины</div>
-			<div class='pos_price'>от <span>1500</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка полотенцесушителя</div>
-			<div class='pos_price'>от <span>3500</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка раковины и мойки</div>
-			<div class='pos_price'>от <span>4000</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка радиаторов отопления</div>
-			<div class='pos_price'>от <span>5000</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Развод и замена труб</div>
-			<div class='pos_price'>от <span>15000</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка посудомоечной машины</div>
-			<div class='pos_price'>от <span>1900</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Установка сушильной машины</div>
-			<div class='pos_price'>от <span>1900</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Демонтаж бытовой техники</div>
-			<div class='pos_price'>от <span>1500</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-	</div>
-	<div class='pos_spis'>
-		<div class='usluga_name'>Мелкий ремонт общестроительный</div>
-		<div class='pos'>
-			<div class='pos_name'>Услуги электрика</div>
-			<div class='pos_price'><span>210</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Услуги сантехника </div>
-			<div class='pos_price'>от <span>350</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Сборка мебели</div>
-			<div class='pos_price'>от <span>300</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Работа с интерьером</div>
-			<div class='pos_price'>от <span>250</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos'>
-			<div class='pos_name'>Отделочные работы </div>
-			<div class='pos_price'>от <span>3000</span> руб</div>
-			<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во' maxlength='3'>	</div>
-			<div class='rslt'></div>
-		</div>
-		<div class='pos_spis'>
-			<div class='usluga_name'>Укладка плитка</div>
-			<div class='pos'>
-				<div class='pos_name'>Укладка плитки на пол</div>
-				<div class='pos_price'>от <span>580</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
+		<!-- <div class="foo_btns">
+		<a href="https://www.facebook.com/SystemTechnologies?fref=ts" class="foo_btn" target="_blank"><i
+				class="icon icon_fb"></i></a> <a target="_blank"
+			href="https://www.linkedin.com/company/system-technologies_2?trk=ppro_cprof" class="foo_btn"><i
+				class="icon icon_in"></i></a>
+	</div> -->
+		<div class="copy">
+			<div style="display: inline-block">© 2018-2022 ООО Офис Мастер
+				<!--<a class="site_map_link"
+				href="/en/sitemap/">Sitemap</a>-->
 			</div>
-			<div class='pos'>
-				<div class='pos_name'>Укладка плитки на стены</div>
-				<div class='pos_price'>от <span>620</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Укладка плитки мозайки</div>
-				<div class='pos_price'>от <span>960</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Укладка керамогранита</div>
-				<div class='pos_price'>от <span>750</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Штукатурка стен</div>
-				<div class='pos_price'>от <span>350</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Выравнивание пола стяжкой Knauf</div>
-				<div class='pos_price'>от <span>370</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Демонтаж плитки</div>
-				<div class='pos_price'>от <span>90</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
+			<div class="footer_doc">
+				<div>
+					<a href="/local/Политика обработки персональных данных.pdf" target="_blank">Политика
+						конфиденциальности</a>
+				</div>
+				<!-- <div>
+				<a href="/local/Политика использования файлов cookie.pdf" target="_blank">This website uses cookies.
+					Learn more about the Cookie Policy</a>
+			</div> -->
 			</div>
 		</div>
-		<div class='pos_spis'>
-			<div class='usluga_name'>Напольные покрытия</div>
-			<div class='pos'>
-				<div class='pos_name'>Укладка линолеума</div>
-				<div class='pos_price'>от <span>150</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Демонтаж искусственных напольных покрытий</div>
-				<div class='pos_price'>от 150 руб/м2</div>
-				<div></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Укладка ламината</div>
-				<div class='pos_price'>от <span>280</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Настил ковровых покрытий</div>
-				<div class='pos_price'>от <span>150</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-		</div>
-		<div class='pos_spis'>
-			<div class='usluga_name'>Обработка поверхностей</div>
-			<div class='pos'>
-				<div class='pos_name'>Полировка паркета, ламината</div>
-				<div class='pos_price'>от <span>80</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Очистка межплиточных швов</div>
-				<div class='pos_price'>от <span>120</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Обеспыливание стен и потолков</div>
-				<div class='pos_price'>от <span>15</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Мытьё стен и потолков</div>
-				<div class='pos_price'>от <span>25</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Мытьё фасадов</div>
-				<div class='pos_price'>от <span>30</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Очистка труднодоступных мест</div>
-				<div class='pos_price'>от <span>500</span> руб/час</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во часов' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Размывка полов</div>
-				<div class='pos_price'>от <span>50</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Полировка мебели</div>
-				<div class='pos_price'>от <span>450</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-			<div class='pos'>
-				<div class='pos_name'>Нанесение защитных покрытий</div>
-				<div class='pos_price'>от <span>80</span> руб/м2</div>
-				<div class='div_amount'><input class='amount' type='text' placeholder='введите кол-во кв.м.' maxlength='5'>	</div>
-				<div class='rslt'></div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class='order'>
-	<div id='final_rate'></div>
-	<div><a class="btn btn-xs btn-outline btn-primary" id='order'>Оплатить<i class="fa fa-long-arrow-right"></i></a>
-	</div>
-</div>
-<div class='back_for_bank'>
-	<div class=for_bank>
-		<div class='oplata'>
-			<div>
-				<p>Оплата</p>
-				<p>Оплата с помощью банковской карты</p>
+	</footer>
+	<!--asdfasdfas -->
 
-				<p>Для выбора оплаты товара с помощью банковской карты на соответствующей странице сайта необходимо нажать кнопку «Оплата банковской картой».</p>
 
-				<p>Оплата происходит через авторизационный сервер Процессингового центра Банка с использованием Банковских кредитных карт следующих платежных систем:
-				</p>
-				<ul>
-					<li>VISA International</li>
-					<li>MasterCard World Wide</li>
-				</ul>
-
-			</div>
-			<div>
-				<p>&nbsp; &nbsp; Описание процесса передачи данных
-					Для оплаты покупки Вы будете перенаправлены на платежный шлюз ОАО "Сбербанк России" для ввода реквизитов Вашей карты. Пожалуйста, приготовьте Вашу пластиковую карту заранее. Соединение с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола шифрования SSL.
-				</p>
-				<p>&nbsp; &nbsp; 				В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей Verified By Visa или MasterCard Secure Code для проведения платежа также может потребоваться ввод специального пароля. Способы и возможность получения паролей для совершения интернет-платежей Вы можете уточнить в банке, выпустившем карту.
-				</p>
-				<p>&nbsp; &nbsp; 				Настоящий сайт поддерживает 128-битное шифрование. Конфиденциальность сообщаемой персональной информации обеспечивается ОАО "Сбербанк России". Введенная информация не будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам осуществляется в строгом соответствии с требованиями платежных систем Visa Int. и MasterCard Europe Sprl.
-				</p>
-			</div>
-			<div>
-				<p>Описание процессa оплаты</p>
-
-				<p>&nbsp; &nbsp; При выборе формы оплаты с помощью пластиковой карты проведение платежа по заказу производится непосредственно после его оформления. После завершения оформления заказа в нашем магазине, Вы должны будете нажать на кнопку «Оплата банковской картой», при этом система переключит Вас на страницу авторизационного сервера, где Вам будет предложено ввести данные пластиковой карты, инициировать ее авторизацию, после чего вернуться в наш магазин кнопкой "Вернуться в магазин". После того, как Вы возвращаетесь в наш магазин, система уведомит Вас о результатах авторизации. В случае подтверждения авторизации Ваш заказ будет автоматически выполняться в соответствии с заданными Вами условиями. В случае отказа в авторизации карты Вы сможете повторить процедуру оплаты.
-				</p>
-			</div>
-			<div>
-				<p>При аннулировании заказа</p>
-
-				<p>&nbsp; &nbsp; При аннулировании позиций из оплаченного заказа (или при аннулировании заказа целиком) Вы можете заказать другой товар на эту сумму, либо вернуть всю сумму на карту предварительно написав письмо на e-mail.
-				</p>
-			</div>
-		</div>
-		<div class='dostavka'>
-			<p>Доставка</p>
-
-			<p>&nbsp; &nbsp; Доставка производится на 1-2-й день с момента зачисления денег на наш счет. Товар доставляется в рабочие дни с 10-00 до 18-00. При получении товара у представителя юридического лица должна быть доверенность с печатью от компании-плательщика или сама печать.</p>
-
-			<p>&nbsp; &nbsp; Частные покупатели для получения товара должны предъявить квитанцию с отметкой Сбербанка об оплате или паспорт владельца карты, если оплата произведена по банковской карте.
-			</p>
-		</div>
-		<div class='garantiya'>
-			<p>Гарантийные обязательства</p>
-
-			<p>&nbsp; &nbsp; Гарантийное обслуживание оборудования в течение всего гарантийного срока осуществляется авторизованными сервисными центрами соответствующих фирм-изготовителей. Адреса сервисных центров Вы можете найти на соответствующей странице нашего сайта. Обязательным условием выполнения гарантийного ремонта является наличие гарантийного талона , в котором должны бать заполнены графы с наименованием товара, гарантийным сроком, датой продажи и серийным номером устройства.
-			</p>
-		</div>
-	</div>
-</div>
-<footer class='footer'>
-	<div class='footer_in'>
-		<div class='map l'>
-			<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0f7ff07a2e1f6ed8cb3105df44b304eea04ce8cc6c9bcfd7621559e52ff5489e&amp;width=100%&amp;height=320&amp;lang=ru_RU&amp;scroll=true"></script>
-		</div>
-		<div class='about r' id='about_us_url'>
-			Адрес: 125130б, г.Москва, ул. Зои и Александра Космодемьянских, д.26/21, стр.1, этаж 5, комната 16.<br/>
-			e-mail: officemaster.msk@gmail.com<br/>
-			телефон: 8 (495) 98-98-431<br/>
-			ОГРН: 1187746030042<br/>
-			ИНН: 7743240206<br/>
-		</div>
-	</div>
-</footer>
 </body>
+
+</html>
