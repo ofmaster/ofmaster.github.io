@@ -35,8 +35,10 @@
 	<link href="css/contacts.css" type="text/css" data-template-style="true" rel="stylesheet">
 	<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PJ648D"></script>
 
-	<script src="https://api-maps.yandex.ru/2.1.79/?lang=ru_RU&apikey=174838a9-06e2-498c-84fb-b1062e517c86"
+	<script src="https://api-maps.yandex.ru/2.1.79/?lang=ru_RU&apikey=38cb056b-7353-4e46-a74a-ba25d93d85b0"
 		type="text/javascript"></script>
+
+	<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=API_KEY" type="text/javascript"></script> -->
 
 	<script type="text/javascript" src="js/script_1.js"></script>
 	<script type="text/javascript"
@@ -252,7 +254,7 @@
 									alt="DSC_0701.jpg" width="245" height="163">
 								<br>
 							</div>
-							<div class="contacts_row"><b></b>
+							<!-- <div class="contacts_row"><b></b>
 								<br>
 								<b>Юридические данные: </b>
 								<br>
@@ -263,11 +265,11 @@
 								IBAN:
 								<br>
 								SWIFT/BIC:
-							</div>
+							</div> -->
 
 							<div class="contacts_map">
 
-								<div id="YMapsID" class="bx-yandex-map" style="height: 100%; width: 100%;"></div>
+								<div id="map" class="bx-yandex-map" style="height: 100%; width: 100%;"></div>
 							</div>
 						</div>
 						<div id="comp_467f5a3f1fd92e3b5939390e38138584">
@@ -570,7 +572,7 @@
 	</footer>
 	<!--asdfasdfas -->
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		ymaps.ready(function () {
 			var myMap = new ymaps.Map("YMapsID", {
 				center: [55.641580, 37.549058],
@@ -586,6 +588,35 @@
 			myMap.geoObjects.add(myPlacemark); // Добавление метки
 			myPlacemark.balloon.open(); // Открытие подсказки метки
 		});
+	</script> -->
+
+	<script type="text/javascript">
+
+		ymaps.ready(init);
+		var myMap;
+
+		function init() {
+
+			myMap = new ymaps.Map("map", {
+				center: [55.641580, 37.549058], // Координаты центра карты
+				zoom: 13 // Маштаб карты
+			});
+
+			myMap.controls.add(
+				new ymaps.control.ZoomControl()  // Добавление элемента управления картой
+			);
+
+			myPlacemark = new ymaps.Placemark([55.641580, 37.549058], { // Координаты метки объекта
+				balloonContent: "<div class='ya_map'>ООО ПроектСтрой</div>"// Подсказка метки
+			}, {
+				preset: "twirl#redDotIcon" // Тип метки
+			});
+
+			myMap.geoObjects.add(myPlacemark); // Добавление метки
+			myPlacemark.balloon.open(); // Открытие подсказки метки
+
+		};
+
 	</script>
 
 </body>
