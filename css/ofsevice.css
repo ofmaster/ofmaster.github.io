@@ -20,6 +20,16 @@ body {
   width: 100%;
 }
 
+.client_box_item li {
+  /* color: #848484; */
+  color: black;
+  font-size: 15px !important;
+}
+
+/* .client_box_itm {
+  width: 100%;
+} */
+
 body {
   margin: 0;
   padding: 0;
@@ -239,6 +249,25 @@ select,
 .form_row .error_text {
   margin-bottom: 5px;
   margin-top: 2px;
+}
+
+.service_list {
+}
+
+.service_img {
+  padding: 30px;
+  width: 70%;
+  max-width: 500px;
+}
+.photo_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service_txt {
+  font-size: 15px;
+  line-height: 24px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .text_input_big {
@@ -1047,8 +1076,6 @@ h1,
 
 h2,
 .h2 {
-  padding-top:85px;
-  padding-bottom: 45px;
   font-size: 22px;
   font-weight: bold;
 }
@@ -1492,6 +1519,10 @@ header {
   display: inline-block;
   padding: 0 30px;
   white-space: nowrap;
+}
+
+span .h3 {
+  color: #3e5b99;
 }
 
 .slide_menu .active span:before {
@@ -2241,6 +2272,16 @@ header {
   padding: 0 20px 55px;
 }
 
+.client_price_item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 33.33%;
+  margin-right: -4px;
+  font-size: 13px;
+  padding: 0 20px 55px;
+}
+
 .client_box_link {
   position: relative;
   display: block;
@@ -2274,7 +2315,8 @@ header {
   z-index: 3;
 }
 
-.client_box_item .h3 {
+.client_box_item .h3,
+.client_price_item h3 {
   display: block;
   margin-bottom: 13px;
   padding: 0 5px 5px 75px !important;
@@ -2282,31 +2324,36 @@ header {
   height: 70px;
 }
 
-.client_box_item .h3:after {
+.client_box_item .h3:after,
+.client_price_item .h3:after {
   content: "";
   display: inline-block;
   vertical-align: middle;
   height: 100%;
 }
 
-.client_box_item .h3 > span {
+.client_box_item .h3 > span,
+.client_price_item .h3 > span {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 }
 
-.client_box_item .text_center + .h3 {
+.client_box_item .text_center + .h3,
+.client_price_item .text_center + .h3 {
   padding-left: 0 !important;
   padding-right: 0 !important;
   height: auto;
 }
 
-.client_box_item .h3:first-child {
+.client_box_item .h3:first-child,
+.client_price_item .h3:first-child {
   padding: 0 !important;
   height: auto;
 }
 
-.client_box_item .text_center + .h3:after {
+.client_box_item .text_center + .h3:after,
+.client_price_item .text_center + .h3:after {
   display: none;
 }
 
@@ -2316,7 +2363,8 @@ header {
   display: block;
 }
 
-.client_box_txt .client_box_item {
+.client_box_txt .client_box_item,
+.client_box_txt .client_price_item {
   padding: 0 20px 30px;
 }
 
@@ -2335,17 +2383,10 @@ header {
 
 .container .client_box_item {
   display: inline-block;
-  width: 100%;
 }
-
-.client_box_item li {
-  color: #848484;
+.container .client_price_item {
+  display: inline-block;
 }
-
-span.h3 {
-  color: #3e5b99;
-}
-
 .next_box {
   padding: 0 30px 42px;
   border-right: 1px solid #d5d5d5;
@@ -3387,6 +3428,11 @@ footer .phone {
   min-width: 0 !important;
 }
 
+.client_box_3 .client_price_item {
+  margin-right: -4px;
+  min-width: 0 !important;
+}
+
 .client_box_icons {
   text-align: center;
 }
@@ -4352,6 +4398,12 @@ h3.search_title,
 @media only screen and (max-width: 1164px) {
   .client_box_item:nth-child(5) .h3 > span {
     font-size: 14px;
+    width: 120px;
+  }
+
+  .client_price_item:nth-child(5) .h3 > span {
+    font-size: 14px;
+    width: 120px;
   }
 }
 
@@ -4560,7 +4612,8 @@ h3.search_title,
     padding: 0 30px;
   }
 
-  .client_box_item {
+  .client_box_item,
+  .client_price_item {
     display: block;
     text-align: center;
     padding: 0;
@@ -4572,7 +4625,13 @@ h3.search_title,
 
   .client_box_item .client_box_txt ul li:before {
     display: inline-block;
+    width: 18px;
+    position: static;
+  }
 
+  .client_price_item .client_box_txt ul li:before {
+    display: inline-block;
+    width: 18px;
     position: static;
   }
 
@@ -4585,6 +4644,10 @@ h3.search_title,
   }
 
   .container .client_box_item {
+    width: 100%;
+  }
+
+  .container .client_price_item {
     width: 100%;
   }
 
@@ -4701,6 +4764,11 @@ h3.search_title,
   }
 
   .client_box_item:nth-child(5) .h3 > span {
+    font-size: 18px;
+    width: auto;
+  }
+
+  .client_price_item:nth-child(5) .h3 > span {
     font-size: 18px;
     width: auto;
   }
